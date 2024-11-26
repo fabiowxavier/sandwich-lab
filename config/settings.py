@@ -31,7 +31,8 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = '1' in os.environ
 
 ALLOWED_HOSTS = ['8000-fabiowxavie-sandwichlab-leiztp7srq2.ws.codeinstitute-ide.net',
-                '.herokuapp.com']
+                '.herokuapp.com',
+                'localhost',]
 
 
 # Application definition
