@@ -90,7 +90,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse(os.getenv("postgresql://neondb_owner:P83bneumOrUc@ep-gentle-waterfall-a2gde8ny.eu-central-1.aws.neon.tech/frisk_groom_nap_821079"))
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 # Password validation
