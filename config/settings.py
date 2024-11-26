@@ -144,16 +144,14 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# URL to use when referring to static files
-STATIC_URL = '/static/'
+# # URL to use when referring to static files
+# STATIC_URL = '/static/'
 
-# Directory where static files will be collected (this is used in production)
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+# # Directory where static files will be collected (this is used in production)
+# STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-# Additional directories where static files are located (for development)
-STATICFILES_DIRS = [BASE_DIR / 'static']
+# # Additional directories where static files are located (for development)
+# STATICFILES_DIRS = [BASE_DIR / 'static']
 
-# To serve static files in production (optional for development)
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
