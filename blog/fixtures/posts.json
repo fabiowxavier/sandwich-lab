@@ -1,751 +1,1220 @@
 [
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Sandwich Name",
-        "slug": "sandwich-name",
-        "author": 1,
-        "content": "<p>Description of the sandwich, including ingredients, how it’s made, and unique features.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A brief description or unique point about the sandwich.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Country or region where the sandwich originates"
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Sandwich Name",
+            "slug": "sandwich-name",
+            "author": 1,
+            "content": "<p>Description of the sandwich, including ingredients, how it’s made, and unique features.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A brief description or unique point about the sandwich.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Country or region where the sandwich originates"
+        }
+    },
+    
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Bánh Mì",
+            "slug": "banh-mi",
+            "author": 1,
+            "content": "<p>The Bánh Mì is a delicious Vietnamese sandwich that combines crispy baguette bread with a variety of savory fillings. It typically includes pork, pâté, pickled vegetables, cilantro, jalapeños, and creamy mayonnaise. Other derivatives swap out cold cuts for different hot proteins: barbecue pork, lemongrass beef, and grilled chicken are all classic options. It's an herbaceous and affordable meal that's accessible to pretty much anyone. There’s even such a thing as dessert bánh mì; instead of the typical savory meat and veggies, you can find bánh mì kẹp kem loaded with ice cream and crushed peanuts. It's okay to eat sandwiches for every meal.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A crispy baguette filled with savory pork, pâté, pickled vegetables, and chili peppers.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Vietnam"
+        }
+    },
+    
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Bean Sandwich",
+            "slug": "bean-sandwich",
+            "author": 1,
+            "content": "<p>The popular, unpretentious West African breakfast sandwich is essentially a choose-your-own-adventure that starts with a few simple elements: red beans cooked in a spicy tomato paste with onions and myriad spices; baguettes, an essential part of most any Senegalese breakfast (and a reminder of its French occupation until 1960); and a generous helping of mayonnaise and hot sauce. From there, you can get wild and throw in eggs, potatoes, onion sauce, or even pasta. At some street vendors, it’s a little more DIY -- you go to the bakery, get the baguette, they add the magic, and wrap it in yesterday’s newspaper, giving you both a delicious sandwich AND the satisfying opportunity to finish someone else’s crossword.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A baguette loaded with red beans, spicy tomato paste, onions, and more.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Senegal"
+        }
+    },
+    
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Boh Loh Yau",
+            "slug": "boh-loh-yau",
+            "author": 1,
+            "content": "<p>Boh loh yau, also known as the humble pineapple bun, is a delectable carb bomb of butter, sugar, and more butter. The Hong Kong breakfast-staple got its name because the sugar cookie-like substance that is placed on the bread dough melts and cracks into a pineapple-like pattern during the baking process (it’s important to note that original pineapple buns don’t contain any actual pineapple). The result is a soft, pillowy bread with a crunchy sugar crust topping, which is delicious in itself. To make the boh loh yau an even bigger treat, the bun is sliced horizontally and a slab of cold butter is placed squarely in its center, making it a remarkably sweet breakfast sandwich of bread and butter.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A sweet pineapple bun filled with a slab of cold butter.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Hong Kong"
+        }
+    },
+    
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Bombay Sandwich",
+            "slug": "bombay-sandwich",
+            "author": 1,
+            "content": "<p>The Bombay sandwich is essentially India's vegetarian take on a classic club sandwich. Standard fillings like bacon get swapped for raw cucumber and beet slices while lettuce and mayo are traded for a layer of spiced boiled potato and plenty of zingy cilantro chutney. Tomatoes usually make an appearance, so does cheese, but you won't find any chicken or turkey in between the bread layers. And like club sandwiches, there are many variations based on personal preferences. Some make the Bombay sandwich with strips of raw green bell pepper while others add onion or even ketchup. One thing unites all of the sandwiches, however, and that is the fact that they are buttered on the outside and grilled in a sandwich press until the contents are gently warmed up and the exterior is golden brown.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A vegetarian take on the classic club sandwich with spiced boiled potato and cilantro chutney.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "India"
+        }
+    },
+    
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Bun Kebab",
+            "slug": "bun-kebab",
+            "author": 1,
+            "content": "<p>The bun kebab consists of a patty, most commonly made with ground beef or lamb, that is mixed with lentils, spices like cumin, ginger, and green chili, and an egg, then fried until crisp in ghee or oil. The cooked patty is then loaded onto a squishy-but-griddled burger bun and topped with things like onions, chutneys, tomatoes, or even an omelet. Vegetarian versions swap the meat for boiled potatoes, but the result is equally as appealing.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A patty made with ground beef or lamb, lentils, and spices, served in a griddled bun.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Pakistan"
+        }
+    },
+    
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Chutney Sandwich",
+            "slug": "chutney-sandwich",
+            "author": 1,
+            "content": "<p>Chutney sandwiches, or the very Indian riff on British tea sandwiches, are made with soft white bread slathered with butter and liberally brushed with verdant green chutney made with handfuls of cilantro, green chili, and ginger. The crusts are often cut off, just like their British counterpart. Frequently, the sandwich is also layered with thinly sliced cucumber or tomato, or even slices of cheese for a good salty punch.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A sandwich with green chutney, butter, and optional veggies or cheese.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "India"
+        }
+    },
+    
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Croquette Sando",
+            "slug": "croquette-sando",
+            "author": 1,
+            "content": "<p>Korroke sandos have a myriad of textures to enjoy: the crunch of panko, the creaminess of whipped potatoes, and the fluff of plushy white bread. They’re typically topped with tangy katsu sauce and are the wonderful carb-on-carb creation you need in your life.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "Panko-crusted, deep-fried potato croquettes sandwiched between soft white bread.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Japan"
+        }
+    },
+    
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Doner Kebab",
+            "slug": "doner-kebab",
+            "author": 1,
+            "content": "<p>The doner kebab (doner comes from 'dondurmek,' a Turkish word for rotating roasted meat) differentiates itself both by the fact that it is served on flatbread (usually Turkish pide) with various vegetables and the ubiquitous white sauce. Its cousins include the gyro or shawarma.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "Rotating roasted meat served on Turkish flatbread with vegetables and white sauce.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Turkey"
+        }
+    },
+    
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Falafel",
+            "slug": "falafel",
+            "author": 1,
+            "content": "<p>Falafel sandwiches are made with mashed chickpeas and spices, deep-fried and stuffed into fresh pita with pickled or fresh veggies, tahini, and hot sauce.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "Deep-fried chickpea balls stuffed into pita with fresh veggies, tahini, and hot sauce.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Middle East"
+        }
+    },
+    
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Fruit Sando",
+            "slug": "fruit-sando",
+            "author": 1,
+            "content": "<p>Fruit sandos are a rainbow of joy laid gently upon clouds of fluffy whipped cream. It’s exactly what it sounds like: a fruit sandwich -- which can be made with all kinds of fruit, but typically features strawberries, kiwis, and peaches -- sliced evenly and layered between subtly sweet cream in a way that allows the three distinct colors to shine within the cross section of the sammie. In Japan, fruit sandos can be found in convenience stores with availability -- and types of sandos -- dependent on the season. What remains a constant is the whipped cream and the fluffy white bread, with crusts trimmed, that encase the juicy produce. Is it dessert? Is it breakfast? It doesn't matter, we're still eating it.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A fruit sandwich featuring strawberries, kiwis, and peaches, layered with whipped cream.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Japan"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Gatsby",
+            "slug": "gatsby",
+            "author": 1,
+            "content": "<p>In 1976, fish shop owner Rashaad Pandy realized he didn't have anything put together to feed some day workers. So he threw what he did have on hand, described in a Cape Town Magazine story as 'a round Portuguese roll, polony, slap chips and achar' and sliced it up for everyone. One of the workers called it 'a Gatsby smash' (the movie version, starring Robert Redford, was playing at the time locally) and all of them lavished the improvised sandwich with praise, so Pandy put it on his menu with the name Gatsby, and it took off. These days, the sandwich is one of Cape Town's most famous exports, still served with polony (essentially bologna), fries, and achar (hot sauce commonly made with green mango and chili).</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A Cape Town-born sandwich made with polony, fries, and achar, served on Portuguese bread.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "South Africa"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Katsu Sando",
+            "slug": "katsu-sando",
+            "author": 1,
+            "content": "<p>Panko-crusted pork cutlets are already amazing on their own. But brush on some katsu sauce, add crunchy chopped cabbage, and sandwich the whole thing between fluffy shokupan bread and you’re on the brink of genius. This Japanese sandwich is a brilliant combination of flavors and textures -- juicy, crispy, meaty, and creamy -- that results in a compact meal that hits all the right notes.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A panko-crusted pork cutlet sandwich, layered with crunchy cabbage and katsu sauce.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Japan"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Kaya Toast",
+            "slug": "kaya-toast",
+            "author": 1,
+            "content": "<p>Toasted bread gets topped with kaya -- a thick, luxurious, and eggy coconut jam flavored with fragrant pandan leaf -- and butter. Often served with a side of soft-boiled eggs topped with dark soy dipping sauce, this sandwich offers a sweet-salty-savory effect that everyone should experience.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A sandwich made with kaya (coconut jam), butter, and toasted bread, often served with soft-boiled eggs.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Singapore/Malaysia"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Khao Jee",
+            "slug": "khao-jee",
+            "author": 1,
+            "content": "<p>The khao jee is a Laotian baguette sandwich featuring herbaceous pork sausage (sai gog) with ingredients like lemongrass, garlic, ginger, and fish sauce. It's typically dressed with chili sauce and served with pickled carrots, onions, and cilantro. A flavorful take on the classic bánh mì.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A Laotian baguette sandwich filled with herbaceous pork sausage and dressed with chili sauce.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Laos"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Moo Yong Sandwich",
+            "slug": "moo-yong-sandwich",
+            "author": 1,
+            "content": "<p>Moo Yong, or dried pork sung, is often paired with congee but becomes a delicious breakfast sandwich when paired with white bread, smeared with chili oil, mayo, or drizzled with condensed milk. It can be savory with eggs and scallions or sweet with mayo or condensed milk.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A Thai breakfast sandwich featuring dried pork sung, mayo, or chili oil on white bread.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Thailand"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Pakistani Club",
+            "slug": "pakistani-club",
+            "author": 1,
+            "content": "<p>The Pakistani club sandwich is a layered affair with spicy chicken cooked with turmeric, garlic, and red chili powder, and an omelet. Served with mayo, tomatoes, and cucumbers, this hearty sandwich is typically cut into triangles and served with fries.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A layered sandwich with spicy chicken, an omelet, and served with fries.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Pakistan"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Pork Belly Bao",
+            "slug": "pork-belly-bao",
+            "author": 1,
+            "content": "<p>The gua bao, or pork belly bao, is a traditional Chinese and Taiwanese snack made with smooth, steamed buns filled with tender pork belly, pickled mustard greens, ground peanuts, and cilantro, creating a balanced combination of flavors and textures.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A steamed bun filled with tender pork belly, pickled mustard greens, peanuts, and cilantro.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "China"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Pork Chop Bun",
+            "slug": "pork-chop-bun",
+            "author": 1,
+            "content": "<p>The Macanese pork chop bun is a hot, juicy pork chop (sometimes with the bone still in) served between Portuguese bread. The pork is typically pan-fried for a crispy exterior and juicy interior, and served with optional toppings like mayo, lettuce, and tomatoes.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A pork chop served between Portuguese bread, often with mayo, lettuce, and tomatoes.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Macau"
+        }
+    },
+    
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Roti John",
+            "slug": "roti-john",
+            "author": 1,
+            "content": "<p>Roti john gets its name from roti -- the Malay and Hindi word for flatbread -- and john, in reference to the western colonial rule that brought baguettes (a large component of the roti john) to Malaysia. A roti john is an omelet sandwich consisting of minced meats (typically chicken), onions, and eggs. The omelet portion of the sandwich can be cooked first, with the bread submerged in the eggy mixture in the middle of cooking, or pan-fried all at once in a method that is similar to cooking French toast. Mayonnaise, ketchup, and chili sauce are then generously squeezed on top -- for a creamy, sweet, and spicy balance to the savory sandwich -- and variants include sardines, salad, cheese, and serundeng, or spicy fried coconut flakes.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A Malaysian omelet sandwich with minced meats, eggs, and a balance of mayonnaise, ketchup, and chili sauce.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Malaysia"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Sabich",
+            "slug": "sabich",
+            "author": 1,
+            "content": "<p>The sabich, a beloved Israeli sandwich, traditionally features a soft pita stuffed with crisp slices of fried eggplant, crunchy pickles, a thick swipe of hummus, a drizzle of tahini, a cucumber and tomato salad, hard-boiled eggs, and some amba, a flavorful pickled mango sauce. This hearty vegetarian option hails from Tel Aviv, created by the city's Iraqi-Jewish community, and has become a popular choice for lunch, dinner, or a snack.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A hearty Israeli pita stuffed with fried eggplant, pickles, hummus, tahini, and hard-boiled eggs.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Israel"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Shawarma",
+            "slug": "shawarma",
+            "author": 1,
+            "content": "<p>Shawarma is a Middle Eastern favorite that traces its origins to the Ottoman Empire. It features slow-roasted meat (usually lamb, chicken, or beef) shaved off a vertical spit, served on pita or flatbread. Toppings and spice blends vary by region, but common additions include tabbouleh, fattoush, and tahini. The spices often include clove, cinnamon, cardamom, and coriander, and shawarma is a key influence behind Mexico's tacos al pastor.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A Middle Eastern sandwich with slow-roasted meat, tahini, and various regional toppings.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Middle East"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Spicy Lamb Burger",
+            "slug": "spicy-lamb-burger",
+            "author": 1,
+            "content": "<p>The spicy lamb burger originates from Xi’an, the capital of Shaanxi province in northwestern China. Known for its spicy and herbaceous flavors, this sandwich features lamb cooked with cumin, chili seeds, and peppers, served on a Chinese flatbread. The spicy lamb burger is a variation of rou jia mo, which dates back to 220 BC and is one of the oldest sandwiches in the world.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A spicy lamb burger from Xi'an, served on traditional Chinese flatbread with cumin and chili.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "China"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Taiwanese Breakfast Sandwich",
+            "slug": "taiwanese-breakfast-sandwich",
+            "author": 1,
+            "content": "<p>The Taiwanese breakfast sandwich is a triple-decker filled with layers of eggs, ham, cucumbers, and greens. Each layer of fluffy white bread is slathered with creamy mayonnaise, and the sandwich is often sold pre-packaged in plastic for an easy grab-and-go breakfast.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A triple-decker breakfast sandwich with eggs, ham, cucumbers, and mayo, served on fluffy white bread.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Taiwan"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Vada Pav",
+            "slug": "vada-pav",
+            "author": 1,
+            "content": "<p>The vada pav is a popular sandwich in Mumbai, where spiced potato patties are deep-fried and served in a soft, grilled bun with chutney. Originally invented as a meal for textile workers, it has become a favorite among all, from college students to Bollywood stars. Variants include nacho vada pav and chef David Chang's version with scallion sauce.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A spiced potato patty sandwich served in a grilled bun with chutney, originally from Mumbai.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "India"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Vegemite",
+            "slug": "vegemite",
+            "author": 1,
+            "content": "<p>Vegemite is an iconic Australian spread made from yeast extract and used to top buttered toast. It's a salty, bitter, umami-rich paste that has become a household staple. Typically served with additional toppings, it was famously referenced in the 1980s song 'Down Under' by Men at Work.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A thick, umami-rich yeast extract spread traditionally used on toast in Australia.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Australia"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "BLT",
+            "slug": "blt",
+            "author": 1,
+            "content": "<p>The BLT, featuring bacon, lettuce, and tomato on toasted bread with mayonnaise, has an origin that stretches back to the 19th century in England. It was initially a simpler version of the club sandwich and has since become a universally loved sandwich, especially in the UK and the U.S.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A classic bacon, lettuce, and tomato sandwich, often considered an iconic treat.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "UK"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Bocadillo",
+            "slug": "bocadillo",
+            "author": 1,
+            "content": "<p>The bocadillo is a Spanish sandwich made with a variety of fillings, typically served in a baguette. Popular variations include serranito with pork loin and jamón serrano, or esgarraet with red pepper salad and cod. The key to a bocadillo is a crunchy, flaky exterior and soft, fluffy interior.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A versatile Spanish sandwich served in a baguette with a variety of fillings.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Spain"
+        }
+    },
+    
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Breakfast Roll",
+            "slug": "breakfast-roll",
+            "author": 1,
+            "content": "<p>The breakfast roll is the portable version of the traditional full Irish breakfast. It combines rashers of bacon, sausages, black/white pudding, and fried eggs into a French roll. Sometimes, tomatoes, hash browns, mushrooms, and baked beans are included. It's essentially an Irish breakfast burrito, beloved across the country for its hangover-curing properties.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "An Irish breakfast rolled into a French roll with bacon, sausages, eggs, and more.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Ireland"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Broodje Kroket",
+            "slug": "broodje-kroket",
+            "author": 1,
+            "content": "<p>The broodje kroket is a Dutch favorite made of a breaded and fried minced meat or potato croquette, typically served in a soft white bun with spicy brown mustard. It's a snack served widely across the Netherlands, available in snack bars, fast-food joints, and even McDonald's. The kroket is an iconic snack, often eaten on the go.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A fried croquette filled with minced meat or potatoes, served in a soft bun with mustard.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Netherlands"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Carrozza",
+            "slug": "carrozza",
+            "author": 1,
+            "content": "<p>The carrozza, also known as mozzarella in carrozza, is an Italian fried sandwich filled with melted mozzarella cheese. Typically made with white bread, it's dipped in an egg wash and fried until golden. A staple in the Campania region, it’s the perfect sandwich for anyone who loves mozzarella sticks in sandwich form.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A deliciously fried sandwich filled with gooey mozzarella cheese.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Italy"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Cevapcici",
+            "slug": "cevapcici",
+            "author": 1,
+            "content": "<p>Cevapcici, a popular street food across the Balkans, consists of spiced minced meat sausages (usually beef or lamb) served in flatbread with onions, kajmak (a cheese spread), and ajvar (a red pepper sauce). The savory, flavorful sausages are charcoal-grilled and are perfect for a late-night snack or a hearty meal.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "Charcoal-grilled sausages made from minced meat and served in flatbread with cheese spread and pepper sauce.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Bosnia and Herzegovina"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Chip Butty",
+            "slug": "chip-butty",
+            "author": 1,
+            "content": "<p>The chip butty is an iconic British sandwich made with thick-cut French fries (chips) stuffed between two slices of buttered white bread. It's an indulgent, no-frills comfort food that is sometimes served with a bit of ketchup or vinegar. It’s the ultimate hangover cure, beloved across the UK.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A no-frills sandwich made with buttered bread and thick French fries.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "UK"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Coronation Chicken",
+            "slug": "coronation-chicken",
+            "author": 1,
+            "content": "<p>Coronation chicken is a curried chicken salad that was created for the coronation of Queen Elizabeth II in 1953. It typically includes chicken, curry powder, mayonnaise, and dried fruit such as apricots or raisins, along with toasted almonds. This elegant sandwich became a staple for fancy sandwiches in the UK.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "Curried chicken salad with dried fruit and toasted almonds, created for Queen Elizabeth II's coronation.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "UK"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Croque Monsieur",
+            "slug": "croque-monsieur",
+            "author": 1,
+            "content": "<p>The Croque Monsieur is a French grilled ham and cheese sandwich that’s topped with béchamel sauce and broiled until golden brown. This indulgent sandwich can be upgraded into a Croque Madame by adding a fried egg on top. It’s a staple of French cafés and a comforting classic of French cuisine.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A French grilled ham and cheese sandwich, topped with béchamel sauce and optionally crowned with an egg.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "France"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Cucumber Sandwich",
+            "slug": "cucumber-sandwich",
+            "author": 1,
+            "content": "<p>The cucumber sandwich is a classic English tea-time treat made with thinly sliced cucumbers, buttered white bread, and a sprinkle of salt. The crusts are usually cut off to give it a refined look. These sandwiches are simple, refreshing, and a staple of afternoon tea in the UK.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A simple sandwich made with thinly sliced cucumbers, buttered bread, and a dash of salt.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "England"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Francesinha",
+            "slug": "francesinha",
+            "author": 1,
+            "content": "<p>The Francesinha, meaning 'little Frenchie,' is a Portuguese version of the French croque monsieur. It typically features layers of ham, sausage, and steak, covered with melted cheese and smothered in a rich, tangy beer-tomato sauce. Some versions even include a fried egg on top. It's a messy but delicious sandwich from Porto, Portugal.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A Portuguese sandwich with layers of meat, melted cheese, and a tangy beer-tomato sauce.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Portugal"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Gyro",
+            "slug": "gyro",
+            "author": 1,
+            "content": "<p>The gyro is a classic Greek street food consisting of shaved roasted meat (typically pork, chicken, or lamb) served in pita bread with tomatoes, onions, and tzatziki sauce. It’s similar to the Turkish doner and Middle Eastern shawarma but has its own distinct flavor and is beloved around the world.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A Greek street food made with roasted meat, tzatziki sauce, and vegetables in pita bread.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Greece"
+        }
+    },
+    
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Jambon Beurre",
+            "slug": "jambon-beurre",
+            "author": 1,
+            "content": "<p>The Jambon Beurre is a classic French sandwich made with just three ingredients: ham, butter, and a baguette. This simple yet delicious sandwich is famous for its perfect balance of salty ham and creamy butter, all enclosed in a fresh, crusty baguette. It’s a popular choice for a quick lunch or snack in Paris and can be found everywhere, from street vendors to high-end cafés.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A simple yet flavorful French sandwich with ham, butter, and a fresh baguette.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "France"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Leberkäse",
+            "slug": "leberkaese",
+            "author": 1,
+            "content": "<p>Leberkäse is a Bavarian specialty made from finely ground pork and corned beef, seasoned and baked into a loaf with a golden brown crust. Sliced like meatloaf, it is traditionally served on a hard or soft roll with mustard. This sandwich, which translates to 'liver cheese,' is a beloved comfort food in Germany, with variations that sometimes include cheese or peppers.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A savory Bavarian meatloaf sandwich made with ground pork and corned beef, served with mustard.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Germany"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Mitraillette",
+            "slug": "mitraillette",
+            "author": 1,
+            "content": "<p>The Mitraillette is a hearty Belgian sandwich made by stuffing a buttered baguette with large slices of meatballs or hamburger, topped with fries, cheese, veggies, and mayo. This decadent creation, often referred to as a mutant chip butty, is a Belgian street food staple that combines crispy fries and savory meat in a delicious, messy sandwich.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A Belgian sandwich with meat, fries, veggies, cheese, and mayo stuffed in a buttered baguette.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Belgium"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Pan Bagnat",
+            "slug": "pan-bagnat",
+            "author": 1,
+            "content": "<p>Pan Bagnat is a traditional sandwich from Nice, France, based on the classic salade niçoise. It features a round country loaf soaked in olive oil and garlic, then filled with ingredients like tomato, onion, olives, hard-boiled eggs, basil, and anchovies or tuna. The sandwich is best enjoyed after being marinated for a while, allowing the flavors to meld together.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A French sandwich with salade niçoise ingredients soaked in olive oil and garlic for extra flavor.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "France"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Panino",
+            "slug": "panino",
+            "author": 1,
+            "content": "<p>Panino, the singular form of panini, refers to a small sandwich typically made with Italian bread and grilled with various fillings. Traditional panino fillings include mortadella, salami, ham, and cheese. It's a beloved snack or lunch in Italy, with panini presses adding a satisfying crunch to the bread.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "An Italian grilled sandwich made with various fillings like mortadella, salami, and cheese.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Italy"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Ploughman's Sandwich",
+            "slug": "ploughmans-sandwich",
+            "author": 1,
+            "content": "<p>The Ploughman's Sandwich is a British classic, often made with wheat bread, cheese, pickles, onions, and apples. Inspired by the Ploughman's lunch, which features cold, hearty ingredients, this sandwich is a refreshing, savory snack, with variations including the addition of Branston pickle or arugula.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A hearty sandwich made with cheese, pickles, onions, and apples, inspired by the Ploughman's lunch.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "UK"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Porilainen",
+            "slug": "porilainen",
+            "author": 1,
+            "content": "<p>The Porilainen is a Finnish sandwich that blends the best of a hamburger and hot dog. It features a hamburger-like patty in a hot dog-style bun, topped with pickles, onions, ketchup, and mustard. Invented in the Finnish city of Pori, it’s a unique and flavorful snack loved by locals.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A hamburger-hot dog fusion sandwich from Finland, topped with pickles, onions, ketchup, and mustard.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Finland"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Tramezzino",
+            "slug": "tramezzino",
+            "author": 1,
+            "content": "<p>Tramezzini are Italian crustless sandwiches, often triangular in shape and filled with ingredients like egg salad, prosciutto, and anchovies. These neat, bite-sized sandwiches are commonly served as snacks in cafés or train stations in Italy and are perfect for a quick bite on the go.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A crustless, triangular Italian sandwich filled with egg salad, prosciutto, and more.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Italy"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Bake and Shark",
+            "slug": "bake-and-shark",
+            "author": 1,
+            "content": "<p>Bake and Shark is a Trinidadian sandwich made with a fried, hollow flatbread stuffed with seasoned and breaded shark meat. It’s often topped with various condiments like garlic sauce, pepper sauce, and coleslaw. Popular on Maracas Beach in Trinidad, it’s one of the island’s most famous beach snacks.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A Trinidadian sandwich made with fried flatbread and breaded shark meat, topped with sauces and coleslaw.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Trinidad"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Barros Luco",
+            "slug": "barros-luco",
+            "author": 1,
+            "content": "<p>Barros Luco is a simple but delicious Chilean sandwich consisting of steak and melted cheese on a roll. Named after Chile's former president, Ramón Barros Luco, this sandwich is beloved for its simplicity, featuring juicy steak paired with gooey Chilean mantecoso cheese.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A simple Chilean sandwich with steak and melted cheese, named after the country's former president.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Chile"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Bauru",
+            "slug": "bauru",
+            "author": 1,
+            "content": "<p>Bauru is a popular Brazilian sandwich named after the city of Bauru. It features a French roll filled with beef, tomatoes, mozzarella, and pickles, then steamed to achieve a melty, delicious filling. It’s a beloved snack in Brazil, often enjoyed at cafés or food stands.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A Brazilian sandwich filled with beef, tomatoes, mozzarella, and pickles, served in a French roll.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Brazil"
+        }
+    },
+    
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Cemita",
+            "slug": "cemita",
+            "author": 1,
+            "content": "<p>The Cemita is a Mexican sandwich originating from Puebla, featuring a sesame-topped brioche-like bun. The sandwich is filled with a variety of proteins such as Milanese, carnitas, or lengua, paired with essential ingredients like shredded Oaxacan cheese, avocado, fresh tomatoes, and spicy papalo. A burst of hot sauce and chipotle crema adds depth to this deliciously stacked sandwich, which is designed to ensure that each bite is packed with flavor without falling apart.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A hearty Mexican sandwich with a sesame brioche bun, avocado, Oaxacan cheese, and a choice of protein.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Mexico"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Chacarero",
+            "slug": "chacarero",
+            "author": 1,
+            "content": "<p>The Chacarero is a Chilean sandwich consisting of thin, flavorful steak paired with fresh tomatoes and green beans. This sandwich, usually served on a crusty marraquetas roll, is elevated with the addition of optional cheese and avocado. It’s a delightful, simple yet flavorful option for a quick meal, with the green beans adding an unexpected crunch and juiciness to the steak.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A Chilean sandwich with steak, tomatoes, green beans, and optionally cheese and avocado.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Chile"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Chivito",
+            "slug": "chivito",
+            "author": 1,
+            "content": "<p>The Chivito is Uruguay’s national sandwich, traditionally made with beef steak (churrasco), tomatoes, olives, and mayonnaise. A variety of toppings, including boiled eggs, peppers, beets, and cucumbers, can be added for extra flavor. The sandwich’s history is tied to a mix-up at a restaurant in 1946, when a diner asked for a chivito (goat), and the restaurant substituted it with beef, creating the chivito as we know it today.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A Uruguayan sandwich with beef steak, tomatoes, olives, and mayonnaise, with optional toppings like boiled eggs and peppers.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Uruguay"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Choripan",
+            "slug": "choripan",
+            "author": 1,
+            "content": "<p>The Choripan is a popular Argentine street food made from spicy chorizo sausages. The sausages are grilled and served in a soft roll, often topped with chimichurri sauce, a tangy and flavorful herb sauce. A beloved food at Argentine street vendors and sporting events, this sandwich is a simple, satisfying combination of spicy sausage and flavorful condiments.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A simple Argentine sandwich with grilled chorizo sausage, chimichurri sauce, and a soft roll.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Argentina"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Doubles",
+            "slug": "doubles",
+            "author": 1,
+            "content": "<p>Doubles are a beloved street food from Trinidad, consisting of two pieces of fried turmeric flatbread filled with curried chickpeas and various chutneys like tamarind and mango. This flavorful sandwich is often served with Scotch bonnet chile sauce for an extra kick. A popular vegan option, it’s a perfect balance of spicy, sweet, and savory flavors, and it’s served as a double helping to satisfy your hunger.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A Trinidadian sandwich with turmeric flatbread, curried chickpeas, and a variety of chutneys.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Trinidad"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Mallorca",
+            "slug": "mallorca",
+            "author": 1,
+            "content": "<p>The Mallorca is a sweet, airy roll from Puerto Rico, often served as a sandwich with hot ham and cheddar cheese. The sandwich version of the Mallorca, sometimes called the 'Puerto Rican Monte Cristo,' combines the sweetness of the bread with the savory richness of the ham and cheese. It's a delightful, comforting sandwich, perfect for a casual lunch or snack.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A Puerto Rican sandwich with sweet, airy rolls filled with hot ham, cheddar cheese, and sometimes scrambled eggs.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Puerto Rico"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Medianoche",
+            "slug": "medianoche",
+            "author": 1,
+            "content": "<p>The Medianoche is a Cuban sandwich that’s similar to the famous Cubano but made with sweeter, doughier bread. The sandwich is typically filled with roast pork, ham, Swiss cheese, pickles, and mustard, all pressed in a flat-press to create a crispy, golden sandwich. The soft, sweet bread makes it a unique late-night snack in Cuba, often enjoyed after a night out.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A Cuban sandwich with roast pork, ham, Swiss cheese, and pickles, served on sweet doughy bread.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Cuba"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Pambazo",
+            "slug": "pambazo",
+            "author": 1,
+            "content": "<p>The Pambazo is a messy Mexican sandwich filled with papas con chorizo (potatoes and spicy sausage) and topped with cream, queso fresco, and guajillo pepper sauce. The bread is soaked in guajillo sauce before being grilled, adding a tangy kick to every bite. It's a flavorful and satisfying sandwich, but definitely one to eat with a fork and knife due to its messiness.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A Mexican sandwich filled with potatoes, chorizo, and topped with guajillo pepper sauce and cream.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Mexico"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Pebete",
+            "slug": "pebete",
+            "author": 1,
+            "content": "<p>The Pebete is an Argentine sandwich served on a soft, slightly sweet roll resembling a short hot dog bun. It is commonly filled with ham and cheese, but can also feature salami and other cured meats, along with tomatoes and mayo. This simple yet satisfying sandwich is a popular snack or lunch choice in Argentina, beloved by both children and adults.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "An Argentine sandwich with ham, cheese, and tomato served in a soft, slightly sweet roll.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Argentina"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Sanduche de Hornado",
+            "slug": "sanduche-de-hornado",
+            "author": 1,
+            "content": "<p>The Sanduche de Hornado is an Ecuadorian sandwich made with leftovers from a roasted pork feast. It typically includes tender pork, lettuce, tomato, pickled onions, avocado, and ají (a hot sauce made from tree tomato). This zesty sandwich is perfect for eating on the go, and it's a delicious way to use up the leftovers from a hornado de chancho roast.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "An Ecuadorian sandwich with roasted pork, lettuce, tomato, pickled onions, and avocado.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Ecuador"
+        }
+    },
+    
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Torta",
+            "slug": "torta",
+            "author": 1,
+            "content": "<p>Tortas are the most versatile sandwiches in Mexico, featuring a wide variety of fillings, including cold cuts, puerco pibil, carnitas, or milanesa. They can be served hot or cold, and sometimes they're drenched in chile sauce (ahogada) for added flavor. Toppings often include pickled peppers, refried beans, and avocado. While some argue that tortas are similar to burritos, they are unique in their own right, offering a distinctive sensory explosion with each bite, all packed into a crusty bolillo roll.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "Mexico's most versatile sandwich, packed with flavorful fillings and toppings in a crusty bolillo roll.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Mexico"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Tripleta",
+            "slug": "tripleta",
+            "author": 1,
+            "content": "<p>The Tripleta is a Puerto Rican sandwich made with three different meats: marinated cube steak, ham, and shredded pork or chicken. The sandwich is topped with vegetables such as cabbage, tomato, and onion, and dressed with mustard, mayo, and sometimes ketchup. A fun addition to the tripleta is the crispy potato sticks, which add texture and flavor to this sandwich served in French bread.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A Puerto Rican sandwich with three meats, vegetables, and crispy potato sticks, all pressed in French bread.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Puerto Rico"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Bacon, Egg, and Cheese",
+            "slug": "bacon-egg-and-cheese",
+            "author": 1,
+            "content": "<p>The Bacon, Egg, and Cheese (BEC) sandwich is a classic American breakfast staple, available everywhere from local bodegas to fast food chains. It's typically made with a fried or scrambled egg, cheese (American, Swiss, or Cheddar), and crispy bacon, all served on a roll such as a Kaiser roll, bagel, or English muffin. The sandwich is widely loved for its satisfying combination of savory and cheesy goodness.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A classic American breakfast sandwich with bacon, egg, and cheese on a roll.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "USA"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Cheesesteak",
+            "slug": "cheesesteak",
+            "author": 1,
+            "content": "<p>The Cheesesteak is a Philadelphia classic, consisting of thinly sliced ribeye steak, grilled onions, and melted cheese, typically served in a hoagie roll. Variations include the addition of pizza sauce or other toppings, but the original version is simple yet satisfying. The Cheesesteak became a street-food revolution after the Oliveri family invented it in 1930, and it remains one of the most iconic sandwiches in American cuisine.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A Philly classic made with thinly sliced ribeye steak, grilled onions, and melted cheese on a hoagie roll.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "USA"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Chicken Biscuit",
+            "slug": "chicken-biscuit",
+            "author": 1,
+            "content": "<p>The Chicken Biscuit is a Southern classic, made by placing a crispy fried chicken breast between a flaky biscuit. Though its origins predate modern chains like Chick-fil-A, it's now widely served at various fast-food outlets. The simplicity of the sandwich makes it a comfort food favorite, and it has since been adapted to include variations like hot honey or artisanal aioli.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A Southern classic with fried chicken placed between a flaky biscuit, often enjoyed as a comfort food.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "USA"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Club Sandwich",
+            "slug": "club-sandwich",
+            "author": 1,
+            "content": "<p>The Club Sandwich is a classic American lunchtime favorite, typically made with chicken or turkey, bacon, lettuce, tomato, and mayo, all layered between three slices of toasted white bread. While the exact origins of the sandwich are debated, it became a fixture of social clubs in the early 20th century. It’s now one of the most recognizable sandwiches, often served in a triple-decker version.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A triple-decker sandwich made with chicken or turkey, bacon, lettuce, tomato, and mayo on toasted white bread.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "USA"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "French Dip",
+            "slug": "french-dip",
+            "author": 1,
+            "content": "<p>The French Dip sandwich, originating from Southern California, features thinly sliced roast beef placed on a toasted French roll. The sandwich is typically served with au jus, a flavorful dipping sauce made from the pan drippings of the roast beef. While the French Dip’s origins are debated, it remains a popular and hearty sandwich with variations that include additional meats and cheeses.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A hearty sandwich with thinly sliced roast beef on a French roll, served with au jus for dipping.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "USA"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Fried Bologna",
+            "slug": "fried-bologna",
+            "author": 1,
+            "content": "<p>The Fried Bologna sandwich is a comfort food staple, consisting of fried bologna slices placed between two slices of white bread, often with mayo and mustard. While it may have been elevated in recent years by chefs using brioche buns and artisanal ingredients, the original version remains simple and satisfying, with a nostalgic flavor for many Americans.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A classic comfort food with fried bologna, mayo, mustard, and white bread.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "USA"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Grilled Cheese",
+            "slug": "grilled-cheese",
+            "author": 1,
+            "content": "<p>The Grilled Cheese sandwich is a simple yet comforting classic, made with buttered bread and melted cheese. It’s an American favorite, often prepared with American cheese, though variations may include other types of cheese. The sandwich became popular in the 1950s after the introduction of pre-sliced bread, and it remains a staple in American kitchens and restaurants.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A comforting sandwich made with melted cheese between buttered, griddled bread.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "USA"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Hot Chicken",
+            "slug": "hot-chicken",
+            "author": 1,
+            "content": "<p>The Hot Chicken sandwich is a Nashville specialty, made with crispy fried chicken coated in a cayenne pepper paste, and served with pickles on white bread. The sandwich was created as part of a revenge story, and today it remains a hotly debated (pun intended) dish in Nashville, with many variations available across the country.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A Nashville specialty featuring crispy fried chicken smothered in spicy cayenne pepper paste and served with pickles.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "USA"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Lobster Roll",
+            "slug": "lobster-roll",
+            "author": 1,
+            "content": "<p>The Lobster Roll is a New England classic, featuring lobster meat served in a split-top hot dog bun, typically dressed with mayo or butter. The sandwich is a summer favorite, with variations found across New England, from Connecticut's buttery version to Maine's mayo-based take. The lobster roll has become an iconic American seafood dish, beloved by locals and tourists alike.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A New England classic made with lobster meat served in a split-top bun, dressed with mayo or butter.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "USA"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Meatball Sub",
+            "slug": "meatball-sub",
+            "author": 1,
+            "content": "<p>The Meatball Sub is a popular Italian-American sandwich, made with juicy meatballs, marinara sauce, and melted mozzarella cheese, all served in a hoagie roll. The sandwich became a staple in American diners and pizzerias, and remains beloved for its hearty, flavorful filling.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A hearty sandwich made with meatballs, marinara sauce, and melted mozzarella cheese in a hoagie roll.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "USA"
+        }
+    },
+    
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Monte Cristo",
+            "slug": "monte-cristo",
+            "author": 1,
+            "content": "<p>The Monte Cristo is an American take on the French croque monsieur, featuring Swiss cheese and ham (or turkey) layered between slices of bread. The sandwich is then egg-battered and fried, giving it a crispy, golden French toast finish. Often served with powdered sugar or jam for dipping, the Monte Cristo became popular at Disneyland in the 1960s and has since gained fame across the U.S. as a savory and sweet delight.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "An Americanized croque monsieur with Swiss cheese, ham, and a French toast finish, often served with powdered sugar or jam.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "USA"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Muffuletta",
+            "slug": "muffuletta",
+            "author": 1,
+            "content": "<p>The Muffuletta is a sandwich born in New Orleans, named after the round, sesame-studded bread used to hold together its flavorful fillings. The sandwich contains a blend of olive salad, Provolone cheese, Italian ham, salami, and mortadella, all drizzled with olive oil. Originating at Central Grocery in 1906, this Italian-American sandwich has become a beloved staple in the U.S., combining bold flavors and textures in one hearty bite.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A New Orleans classic made with olive salad, cheeses, and Italian meats, served in a sesame seed-studded round loaf.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "USA"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Peanut Butter & Jelly",
+            "slug": "peanut-butter-jelly",
+            "author": 1,
+            "content": "<p>Peanut Butter & Jelly (PB&J) is one of the most iconic American sandwiches, beloved for its simple yet perfect combination of flavors. Originally popularized in the 20th century, the sandwich combines peanut butter and jelly (or jam) spread between two slices of bread, creating a satisfying and nostalgic meal. Whether served with crunchy or creamy peanut butter, PB&J remains a timeless classic.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A classic American sandwich made with peanut butter and jelly spread between slices of bread, a timeless favorite.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "USA"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Peameal Bacon",
+            "slug": "peameal-bacon",
+            "author": 1,
+            "content": "<p>The Peameal Bacon sandwich hails from Canada, particularly Toronto, where it is a beloved dish. Peameal bacon is a type of brined and cornmeal-coated bacon that’s griddled to perfection. Served on a Kaiser roll with mustard, lettuce, and sometimes tomato or cheddar cheese, this sandwich is a Canadian classic, offering a savory, crispy bite that has captured the hearts of Canadians and visitors alike.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A Canadian sandwich made with peameal bacon, mustard, and fresh vegetables on a Kaiser roll.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Canada"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Po' Boy",
+            "slug": "po-boy",
+            "author": 1,
+            "content": "<p>The Po' Boy is a staple of New Orleans cuisine, filled with either fried seafood or roast beef, and served in a French roll. Toppings like lettuce, tomato, mayo, pickles, and hot sauce come with the sandwich when ordered ‘dressed.’ This iconic sandwich was created during a 1929 transit strike to feed strikers with free sandwiches, and today it remains a delicious New Orleans tradition.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A New Orleans sandwich filled with fried seafood or roast beef, dressed with lettuce, tomato, mayo, and pickles.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "USA"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Pulled Pork",
+            "slug": "pulled-pork",
+            "author": 1,
+            "content": "<p>The Pulled Pork sandwich is a true Southern American classic, featuring slow-cooked, tender pork shoulder that's been pulled apart and served on a soft bun. It's often paired with a vinegar-based or sweet sauce, with a dollop of coleslaw to balance out the flavors. Whether you prefer Carolina-style or Memphis-style, the Pulled Pork sandwich remains a favorite among BBQ enthusiasts across the U.S.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "Slow-cooked, tender pulled pork served on a soft bun with BBQ sauce and coleslaw.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "USA"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Reuben",
+            "slug": "reuben",
+            "author": 1,
+            "content": "<p>The Reuben is a sandwich that combines corned beef, Swiss cheese, sauerkraut, and Thousand Island dressing, all piled between slices of rye bread. Though the Reuben is now a classic deli sandwich, its origins trace back to Omaha, Nebraska, where it was created in a late-night card game. Over the years, the Reuben has become a beloved American sandwich found at delis across the country.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A deli classic made with corned beef, Swiss cheese, sauerkraut, and Thousand Island dressing on rye bread.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "USA"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Sloppy Joe",
+            "slug": "sloppy-joe",
+            "author": 1,
+            "content": "<p>The Sloppy Joe is a messy but satisfying American sandwich made with ground beef cooked in a tangy, sweet sauce and served on a soft burger bun. It was popularized in the 1930s during the Great Depression as an affordable and filling meal. Today, the Sloppy Joe remains a beloved comfort food, often found in casual eateries and school cafeterias across the U.S.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "Ground beef cooked in tangy sauce, served on a soft bun — a messy but beloved American classic.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "USA"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+            "title": "Smoked Meat",
+            "slug": "smoked-meat",
+            "author": 1,
+            "content": "<p>Montreal-style smoked meat is a Canadian delicacy, often compared to pastrami. It’s made by curing brisket with spices like peppercorn, mustard seeds, and garlic before smoking it. The result is tender, flavorful meat that’s usually served on rye bread with mustard. This sandwich has become a symbol of Montreal cuisine, and the crispy bits of meat are sometimes used as a topping for poutine.</p>",
+            "created_on": "2024-11-22T00:00:00Z",
+            "status": 1,
+            "excerpt": "A Montreal classic made with tender, smoky brisket served on rye with mustard.",
+            "updated_on": "2024-11-22T00:00:00Z",
+            "location": "Canada"
+        }
     }
-},
-
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Bánh Mì",
-        "slug": "banh-mi",
-        "author": 1,
-        "content": "<p>The Bánh Mì is a delicious Vietnamese sandwich that combines crispy baguette bread with a variety of savory fillings. It typically includes pork, pâté, pickled vegetables, cilantro, jalapeños, and creamy mayonnaise. Other derivatives swap out cold cuts for different hot proteins: barbecue pork, lemongrass beef, and grilled chicken are all classic options. It's an herbaceous and affordable meal that's accessible to pretty much anyone. There’s even such a thing as dessert bánh mì; instead of the typical savory meat and veggies, you can find bánh mì kẹp kem loaded with ice cream and crushed peanuts. It's okay to eat sandwiches for every meal.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A crispy baguette filled with savory pork, pâté, pickled vegetables, and chili peppers.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Vietnam"
-    }
-},
-
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Bean Sandwich",
-        "slug": "bean-sandwich",
-        "author": 1,
-        "content": "<p>The popular, unpretentious West African breakfast sandwich is essentially a choose-your-own-adventure that starts with a few simple elements: red beans cooked in a spicy tomato paste with onions and myriad spices; baguettes, an essential part of most any Senegalese breakfast (and a reminder of its French occupation until 1960); and a generous helping of mayonnaise and hot sauce. From there, you can get wild and throw in eggs, potatoes, onion sauce, or even pasta. At some street vendors, it’s a little more DIY -- you go to the bakery, get the baguette, they add the magic, and wrap it in yesterday’s newspaper, giving you both a delicious sandwich AND the satisfying opportunity to finish someone else’s crossword.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A baguette loaded with red beans, spicy tomato paste, onions, and more.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Senegal"
-    }
-},
-
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Boh Loh Yau",
-        "slug": "boh-loh-yau",
-        "author": 1,
-        "content": "<p>Boh loh yau, also known as the humble pineapple bun, is a delectable carb bomb of butter, sugar, and more butter. The Hong Kong breakfast-staple got its name because the sugar cookie-like substance that is placed on the bread dough melts and cracks into a pineapple-like pattern during the baking process (it’s important to note that original pineapple buns don’t contain any actual pineapple). The result is a soft, pillowy bread with a crunchy sugar crust topping, which is delicious in itself. To make the boh loh yau an even bigger treat, the bun is sliced horizontally and a slab of cold butter is placed squarely in its center, making it a remarkably sweet breakfast sandwich of bread and butter.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A sweet pineapple bun filled with a slab of cold butter.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Hong Kong"
-    }
-},
-
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Bombay Sandwich",
-        "slug": "bombay-sandwich",
-        "author": 1,
-        "content": "<p>The Bombay sandwich is essentially India's vegetarian take on a classic club sandwich. Standard fillings like bacon get swapped for raw cucumber and beet slices while lettuce and mayo are traded for a layer of spiced boiled potato and plenty of zingy cilantro chutney. Tomatoes usually make an appearance, so does cheese, but you won't find any chicken or turkey in between the bread layers. And like club sandwiches, there are many variations based on personal preferences. Some make the Bombay sandwich with strips of raw green bell pepper while others add onion or even ketchup. One thing unites all of the sandwiches, however, and that is the fact that they are buttered on the outside and grilled in a sandwich press until the contents are gently warmed up and the exterior is golden brown.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A vegetarian take on the classic club sandwich with spiced boiled potato and cilantro chutney.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "India"
-    }
-},
-
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Bun Kebab",
-        "slug": "bun-kebab",
-        "author": 1,
-        "content": "<p>The bun kebab consists of a patty, most commonly made with ground beef or lamb, that is mixed with lentils, spices like cumin, ginger, and green chili, and an egg, then fried until crisp in ghee or oil. The cooked patty is then loaded onto a squishy-but-griddled burger bun and topped with things like onions, chutneys, tomatoes, or even an omelet. Vegetarian versions swap the meat for boiled potatoes, but the result is equally as appealing.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A patty made with ground beef or lamb, lentils, and spices, served in a griddled bun.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Pakistan"
-    }
-},
-
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Chutney Sandwich",
-        "slug": "chutney-sandwich",
-        "author": 1,
-        "content": "<p>Chutney sandwiches, or the very Indian riff on British tea sandwiches, are made with soft white bread slathered with butter and liberally brushed with verdant green chutney made with handfuls of cilantro, green chili, and ginger. The crusts are often cut off, just like their British counterpart. Frequently, the sandwich is also layered with thinly sliced cucumber or tomato, or even slices of cheese for a good salty punch.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A sandwich with green chutney, butter, and optional veggies or cheese.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "India"
-    }
-},
-
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Croquette Sando",
-        "slug": "croquette-sando",
-        "author": 1,
-        "content": "<p>Korroke sandos have a myriad of textures to enjoy: the crunch of panko, the creaminess of whipped potatoes, and the fluff of plushy white bread. They’re typically topped with tangy katsu sauce and are the wonderful carb-on-carb creation you need in your life.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "Panko-crusted, deep-fried potato croquettes sandwiched between soft white bread.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Japan"
-    }
-},
-
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Doner Kebab",
-        "slug": "doner-kebab",
-        "author": 1,
-        "content": "<p>The doner kebab (doner comes from 'dondurmek,' a Turkish word for rotating roasted meat) differentiates itself both by the fact that it is served on flatbread (usually Turkish pide) with various vegetables and the ubiquitous white sauce. Its cousins include the gyro or shawarma.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "Rotating roasted meat served on Turkish flatbread with vegetables and white sauce.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Turkey"
-    }
-},
-
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Falafel",
-        "slug": "falafel",
-        "author": 1,
-        "content": "<p>Falafel sandwiches are made with mashed chickpeas and spices, deep-fried and stuffed into fresh pita with pickled or fresh veggies, tahini, and hot sauce.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "Deep-fried chickpea balls stuffed into pita with fresh veggies, tahini, and hot sauce.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Middle East"
-    }
-},
-
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Fruit Sando",
-        "slug": "fruit-sando",
-        "author": 1,
-        "content": "<p>Fruit sandos are a rainbow of joy laid gently upon clouds of fluffy whipped cream. It’s exactly what it sounds like: a fruit sandwich -- which can be made with all kinds of fruit, but typically features strawberries, kiwis, and peaches -- sliced evenly and layered between subtly sweet cream in a way that allows the three distinct colors to shine within the cross section of the sammie. In Japan, fruit sandos can be found in convenience stores with availability -- and types of sandos -- dependent on the season. What remains a constant is the whipped cream and the fluffy white bread, with crusts trimmed, that encase the juicy produce. Is it dessert? Is it breakfast? It doesn't matter, we're still eating it.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A fruit sandwich featuring strawberries, kiwis, and peaches, layered with whipped cream.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Japan"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Gatsby",
-        "slug": "gatsby",
-        "author": 1,
-        "content": "<p>In 1976, fish shop owner Rashaad Pandy realized he didn't have anything put together to feed some day workers. So he threw what he did have on hand, described in a Cape Town Magazine story as 'a round Portuguese roll, polony, slap chips and achar' and sliced it up for everyone. One of the workers called it 'a Gatsby smash' (the movie version, starring Robert Redford, was playing at the time locally) and all of them lavished the improvised sandwich with praise, so Pandy put it on his menu with the name Gatsby, and it took off. These days, the sandwich is one of Cape Town's most famous exports, still served with polony (essentially bologna), fries, and achar (hot sauce commonly made with green mango and chili).</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A Cape Town-born sandwich made with polony, fries, and achar, served on Portuguese bread.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "South Africa"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Katsu Sando",
-        "slug": "katsu-sando",
-        "author": 1,
-        "content": "<p>Panko-crusted pork cutlets are already amazing on their own. But brush on some katsu sauce, add crunchy chopped cabbage, and sandwich the whole thing between fluffy shokupan bread and you’re on the brink of genius. This Japanese sandwich is a brilliant combination of flavors and textures -- juicy, crispy, meaty, and creamy -- that results in a compact meal that hits all the right notes.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A panko-crusted pork cutlet sandwich, layered with crunchy cabbage and katsu sauce.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Japan"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Kaya Toast",
-        "slug": "kaya-toast",
-        "author": 1,
-        "content": "<p>Toasted bread gets topped with kaya -- a thick, luxurious, and eggy coconut jam flavored with fragrant pandan leaf -- and butter. Often served with a side of soft-boiled eggs topped with dark soy dipping sauce, this sandwich offers a sweet-salty-savory effect that everyone should experience.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A sandwich made with kaya (coconut jam), butter, and toasted bread, often served with soft-boiled eggs.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Singapore/Malaysia"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Khao Jee",
-        "slug": "khao-jee",
-        "author": 1,
-        "content": "<p>The khao jee is a Laotian baguette sandwich featuring herbaceous pork sausage (sai gog) with ingredients like lemongrass, garlic, ginger, and fish sauce. It's typically dressed with chili sauce and served with pickled carrots, onions, and cilantro. A flavorful take on the classic bánh mì.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A Laotian baguette sandwich filled with herbaceous pork sausage and dressed with chili sauce.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Laos"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Moo Yong Sandwich",
-        "slug": "moo-yong-sandwich",
-        "author": 1,
-        "content": "<p>Moo Yong, or dried pork sung, is often paired with congee but becomes a delicious breakfast sandwich when paired with white bread, smeared with chili oil, mayo, or drizzled with condensed milk. It can be savory with eggs and scallions or sweet with mayo or condensed milk.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A Thai breakfast sandwich featuring dried pork sung, mayo, or chili oil on white bread.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Thailand"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Pakistani Club",
-        "slug": "pakistani-club",
-        "author": 1,
-        "content": "<p>The Pakistani club sandwich is a layered affair with spicy chicken cooked with turmeric, garlic, and red chili powder, and an omelet. Served with mayo, tomatoes, and cucumbers, this hearty sandwich is typically cut into triangles and served with fries.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A layered sandwich with spicy chicken, an omelet, and served with fries.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Pakistan"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Pork Belly Bao",
-        "slug": "pork-belly-bao",
-        "author": 1,
-        "content": "<p>The gua bao, or pork belly bao, is a traditional Chinese and Taiwanese snack made with smooth, steamed buns filled with tender pork belly, pickled mustard greens, ground peanuts, and cilantro, creating a balanced combination of flavors and textures.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A steamed bun filled with tender pork belly, pickled mustard greens, peanuts, and cilantro.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "China"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Pork Chop Bun",
-        "slug": "pork-chop-bun",
-        "author": 1,
-        "content": "<p>The Macanese pork chop bun is a hot, juicy pork chop (sometimes with the bone still in) served between Portuguese bread. The pork is typically pan-fried for a crispy exterior and juicy interior, and served with optional toppings like mayo, lettuce, and tomatoes.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A pork chop served between Portuguese bread, often with mayo, lettuce, and tomatoes.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Macau"
-    }
-},
-
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Roti John",
-        "slug": "roti-john",
-        "author": 1,
-        "content": "<p>Roti john gets its name from roti -- the Malay and Hindi word for flatbread -- and john, in reference to the western colonial rule that brought baguettes (a large component of the roti john) to Malaysia. A roti john is an omelet sandwich consisting of minced meats (typically chicken), onions, and eggs. The omelet portion of the sandwich can be cooked first, with the bread submerged in the eggy mixture in the middle of cooking, or pan-fried all at once in a method that is similar to cooking French toast. Mayonnaise, ketchup, and chili sauce are then generously squeezed on top -- for a creamy, sweet, and spicy balance to the savory sandwich -- and variants include sardines, salad, cheese, and serundeng, or spicy fried coconut flakes.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A Malaysian omelet sandwich with minced meats, eggs, and a balance of mayonnaise, ketchup, and chili sauce.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Malaysia"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Sabich",
-        "slug": "sabich",
-        "author": 1,
-        "content": "<p>The sabich, a beloved Israeli sandwich, traditionally features a soft pita stuffed with crisp slices of fried eggplant, crunchy pickles, a thick swipe of hummus, a drizzle of tahini, a cucumber and tomato salad, hard-boiled eggs, and some amba, a flavorful pickled mango sauce. This hearty vegetarian option hails from Tel Aviv, created by the city's Iraqi-Jewish community, and has become a popular choice for lunch, dinner, or a snack.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A hearty Israeli pita stuffed with fried eggplant, pickles, hummus, tahini, and hard-boiled eggs.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Israel"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Shawarma",
-        "slug": "shawarma",
-        "author": 1,
-        "content": "<p>Shawarma is a Middle Eastern favorite that traces its origins to the Ottoman Empire. It features slow-roasted meat (usually lamb, chicken, or beef) shaved off a vertical spit, served on pita or flatbread. Toppings and spice blends vary by region, but common additions include tabbouleh, fattoush, and tahini. The spices often include clove, cinnamon, cardamom, and coriander, and shawarma is a key influence behind Mexico's tacos al pastor.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A Middle Eastern sandwich with slow-roasted meat, tahini, and various regional toppings.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Middle East"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Spicy Lamb Burger",
-        "slug": "spicy-lamb-burger",
-        "author": 1,
-        "content": "<p>The spicy lamb burger originates from Xi’an, the capital of Shaanxi province in northwestern China. Known for its spicy and herbaceous flavors, this sandwich features lamb cooked with cumin, chili seeds, and peppers, served on a Chinese flatbread. The spicy lamb burger is a variation of rou jia mo, which dates back to 220 BC and is one of the oldest sandwiches in the world.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A spicy lamb burger from Xi'an, served on traditional Chinese flatbread with cumin and chili.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "China"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Taiwanese Breakfast Sandwich",
-        "slug": "taiwanese-breakfast-sandwich",
-        "author": 1,
-        "content": "<p>The Taiwanese breakfast sandwich is a triple-decker filled with layers of eggs, ham, cucumbers, and greens. Each layer of fluffy white bread is slathered with creamy mayonnaise, and the sandwich is often sold pre-packaged in plastic for an easy grab-and-go breakfast.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A triple-decker breakfast sandwich with eggs, ham, cucumbers, and mayo, served on fluffy white bread.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Taiwan"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Vada Pav",
-        "slug": "vada-pav",
-        "author": 1,
-        "content": "<p>The vada pav is a popular sandwich in Mumbai, where spiced potato patties are deep-fried and served in a soft, grilled bun with chutney. Originally invented as a meal for textile workers, it has become a favorite among all, from college students to Bollywood stars. Variants include nacho vada pav and chef David Chang's version with scallion sauce.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A spiced potato patty sandwich served in a grilled bun with chutney, originally from Mumbai.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "India"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Vegemite",
-        "slug": "vegemite",
-        "author": 1,
-        "content": "<p>Vegemite is an iconic Australian spread made from yeast extract and used to top buttered toast. It's a salty, bitter, umami-rich paste that has become a household staple. Typically served with additional toppings, it was famously referenced in the 1980s song 'Down Under' by Men at Work.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A thick, umami-rich yeast extract spread traditionally used on toast in Australia.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Australia"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "BLT",
-        "slug": "blt",
-        "author": 1,
-        "content": "<p>The BLT, featuring bacon, lettuce, and tomato on toasted bread with mayonnaise, has an origin that stretches back to the 19th century in England. It was initially a simpler version of the club sandwich and has since become a universally loved sandwich, especially in the UK and the U.S.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A classic bacon, lettuce, and tomato sandwich, often considered an iconic treat.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "UK"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Bocadillo",
-        "slug": "bocadillo",
-        "author": 1,
-        "content": "<p>The bocadillo is a Spanish sandwich made with a variety of fillings, typically served in a baguette. Popular variations include serranito with pork loin and jamón serrano, or esgarraet with red pepper salad and cod. The key to a bocadillo is a crunchy, flaky exterior and soft, fluffy interior.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A versatile Spanish sandwich served in a baguette with a variety of fillings.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Spain"
-    }
-},
-
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Breakfast Roll",
-        "slug": "breakfast-roll",
-        "author": 1,
-        "content": "<p>The breakfast roll is the portable version of the traditional full Irish breakfast. It combines rashers of bacon, sausages, black/white pudding, and fried eggs into a French roll. Sometimes, tomatoes, hash browns, mushrooms, and baked beans are included. It's essentially an Irish breakfast burrito, beloved across the country for its hangover-curing properties.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "An Irish breakfast rolled into a French roll with bacon, sausages, eggs, and more.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Ireland"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Broodje Kroket",
-        "slug": "broodje-kroket",
-        "author": 1,
-        "content": "<p>The broodje kroket is a Dutch favorite made of a breaded and fried minced meat or potato croquette, typically served in a soft white bun with spicy brown mustard. It's a snack served widely across the Netherlands, available in snack bars, fast-food joints, and even McDonald's. The kroket is an iconic snack, often eaten on the go.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A fried croquette filled with minced meat or potatoes, served in a soft bun with mustard.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Netherlands"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Carrozza",
-        "slug": "carrozza",
-        "author": 1,
-        "content": "<p>The carrozza, also known as mozzarella in carrozza, is an Italian fried sandwich filled with melted mozzarella cheese. Typically made with white bread, it's dipped in an egg wash and fried until golden. A staple in the Campania region, it’s the perfect sandwich for anyone who loves mozzarella sticks in sandwich form.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A deliciously fried sandwich filled with gooey mozzarella cheese.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Italy"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Cevapcici",
-        "slug": "cevapcici",
-        "author": 1,
-        "content": "<p>Cevapcici, a popular street food across the Balkans, consists of spiced minced meat sausages (usually beef or lamb) served in flatbread with onions, kajmak (a cheese spread), and ajvar (a red pepper sauce). The savory, flavorful sausages are charcoal-grilled and are perfect for a late-night snack or a hearty meal.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "Charcoal-grilled sausages made from minced meat and served in flatbread with cheese spread and pepper sauce.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Bosnia and Herzegovina"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Chip Butty",
-        "slug": "chip-butty",
-        "author": 1,
-        "content": "<p>The chip butty is an iconic British sandwich made with thick-cut French fries (chips) stuffed between two slices of buttered white bread. It's an indulgent, no-frills comfort food that is sometimes served with a bit of ketchup or vinegar. It’s the ultimate hangover cure, beloved across the UK.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A no-frills sandwich made with buttered bread and thick French fries.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "UK"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Coronation Chicken",
-        "slug": "coronation-chicken",
-        "author": 1,
-        "content": "<p>Coronation chicken is a curried chicken salad that was created for the coronation of Queen Elizabeth II in 1953. It typically includes chicken, curry powder, mayonnaise, and dried fruit such as apricots or raisins, along with toasted almonds. This elegant sandwich became a staple for fancy sandwiches in the UK.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "Curried chicken salad with dried fruit and toasted almonds, created for Queen Elizabeth II's coronation.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "UK"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Croque Monsieur",
-        "slug": "croque-monsieur",
-        "author": 1,
-        "content": "<p>The Croque Monsieur is a French grilled ham and cheese sandwich that’s topped with béchamel sauce and broiled until golden brown. This indulgent sandwich can be upgraded into a Croque Madame by adding a fried egg on top. It’s a staple of French cafés and a comforting classic of French cuisine.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A French grilled ham and cheese sandwich, topped with béchamel sauce and optionally crowned with an egg.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "France"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Cucumber Sandwich",
-        "slug": "cucumber-sandwich",
-        "author": 1,
-        "content": "<p>The cucumber sandwich is a classic English tea-time treat made with thinly sliced cucumbers, buttered white bread, and a sprinkle of salt. The crusts are usually cut off to give it a refined look. These sandwiches are simple, refreshing, and a staple of afternoon tea in the UK.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A simple sandwich made with thinly sliced cucumbers, buttered bread, and a dash of salt.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "England"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Francesinha",
-        "slug": "francesinha",
-        "author": 1,
-        "content": "<p>The Francesinha, meaning 'little Frenchie,' is a Portuguese version of the French croque monsieur. It typically features layers of ham, sausage, and steak, covered with melted cheese and smothered in a rich, tangy beer-tomato sauce. Some versions even include a fried egg on top. It's a messy but delicious sandwich from Porto, Portugal.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A Portuguese sandwich with layers of meat, melted cheese, and a tangy beer-tomato sauce.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Portugal"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Gyro",
-        "slug": "gyro",
-        "author": 1,
-        "content": "<p>The gyro is a classic Greek street food consisting of shaved roasted meat (typically pork, chicken, or lamb) served in pita bread with tomatoes, onions, and tzatziki sauce. It’s similar to the Turkish doner and Middle Eastern shawarma but has its own distinct flavor and is beloved around the world.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A Greek street food made with roasted meat, tzatziki sauce, and vegetables in pita bread.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Greece"
-    }
-},
-
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Jambon Beurre",
-        "slug": "jambon-beurre",
-        "author": 1,
-        "content": "<p>The Jambon Beurre is a classic French sandwich made with just three ingredients: ham, butter, and a baguette. This simple yet delicious sandwich is famous for its perfect balance of salty ham and creamy butter, all enclosed in a fresh, crusty baguette. It’s a popular choice for a quick lunch or snack in Paris and can be found everywhere, from street vendors to high-end cafés.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A simple yet flavorful French sandwich with ham, butter, and a fresh baguette.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "France"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Leberkäse",
-        "slug": "leberkaese",
-        "author": 1,
-        "content": "<p>Leberkäse is a Bavarian specialty made from finely ground pork and corned beef, seasoned and baked into a loaf with a golden brown crust. Sliced like meatloaf, it is traditionally served on a hard or soft roll with mustard. This sandwich, which translates to 'liver cheese,' is a beloved comfort food in Germany, with variations that sometimes include cheese or peppers.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A savory Bavarian meatloaf sandwich made with ground pork and corned beef, served with mustard.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Germany"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Mitraillette",
-        "slug": "mitraillette",
-        "author": 1,
-        "content": "<p>The Mitraillette is a hearty Belgian sandwich made by stuffing a buttered baguette with large slices of meatballs or hamburger, topped with fries, cheese, veggies, and mayo. This decadent creation, often referred to as a mutant chip butty, is a Belgian street food staple that combines crispy fries and savory meat in a delicious, messy sandwich.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A Belgian sandwich with meat, fries, veggies, cheese, and mayo stuffed in a buttered baguette.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Belgium"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Pan Bagnat",
-        "slug": "pan-bagnat",
-        "author": 1,
-        "content": "<p>Pan Bagnat is a traditional sandwich from Nice, France, based on the classic salade niçoise. It features a round country loaf soaked in olive oil and garlic, then filled with ingredients like tomato, onion, olives, hard-boiled eggs, basil, and anchovies or tuna. The sandwich is best enjoyed after being marinated for a while, allowing the flavors to meld together.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A French sandwich with salade niçoise ingredients soaked in olive oil and garlic for extra flavor.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "France"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Panino",
-        "slug": "panino",
-        "author": 1,
-        "content": "<p>Panino, the singular form of panini, refers to a small sandwich typically made with Italian bread and grilled with various fillings. Traditional panino fillings include mortadella, salami, ham, and cheese. It's a beloved snack or lunch in Italy, with panini presses adding a satisfying crunch to the bread.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "An Italian grilled sandwich made with various fillings like mortadella, salami, and cheese.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Italy"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Ploughman's Sandwich",
-        "slug": "ploughmans-sandwich",
-        "author": 1,
-        "content": "<p>The Ploughman's Sandwich is a British classic, often made with wheat bread, cheese, pickles, onions, and apples. Inspired by the Ploughman's lunch, which features cold, hearty ingredients, this sandwich is a refreshing, savory snack, with variations including the addition of Branston pickle or arugula.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A hearty sandwich made with cheese, pickles, onions, and apples, inspired by the Ploughman's lunch.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "UK"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Porilainen",
-        "slug": "porilainen",
-        "author": 1,
-        "content": "<p>The Porilainen is a Finnish sandwich that blends the best of a hamburger and hot dog. It features a hamburger-like patty in a hot dog-style bun, topped with pickles, onions, ketchup, and mustard. Invented in the Finnish city of Pori, it’s a unique and flavorful snack loved by locals.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A hamburger-hot dog fusion sandwich from Finland, topped with pickles, onions, ketchup, and mustard.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Finland"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Tramezzino",
-        "slug": "tramezzino",
-        "author": 1,
-        "content": "<p>Tramezzini are Italian crustless sandwiches, often triangular in shape and filled with ingredients like egg salad, prosciutto, and anchovies. These neat, bite-sized sandwiches are commonly served as snacks in cafés or train stations in Italy and are perfect for a quick bite on the go.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A crustless, triangular Italian sandwich filled with egg salad, prosciutto, and more.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Italy"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Bake and Shark",
-        "slug": "bake-and-shark",
-        "author": 1,
-        "content": "<p>Bake and Shark is a Trinidadian sandwich made with a fried, hollow flatbread stuffed with seasoned and breaded shark meat. It’s often topped with various condiments like garlic sauce, pepper sauce, and coleslaw. Popular on Maracas Beach in Trinidad, it’s one of the island’s most famous beach snacks.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A Trinidadian sandwich made with fried flatbread and breaded shark meat, topped with sauces and coleslaw.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Trinidad"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Barros Luco",
-        "slug": "barros-luco",
-        "author": 1,
-        "content": "<p>Barros Luco is a simple but delicious Chilean sandwich consisting of steak and melted cheese on a roll. Named after Chile's former president, Ramón Barros Luco, this sandwich is beloved for its simplicity, featuring juicy steak paired with gooey Chilean mantecoso cheese.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A simple Chilean sandwich with steak and melted cheese, named after the country's former president.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Chile"
-    }
-},
-{
-    "model": "blog.post",
-    "pk": null,
-    "fields": {
-        "title": "Bauru",
-        "slug": "bauru",
-        "author": 1,
-        "content": "<p>Bauru is a popular Brazilian sandwich named after the city of Bauru. It features a French roll filled with beef, tomatoes, mozzarella, and pickles, then steamed to achieve a melty, delicious filling. It’s a beloved snack in Brazil, often enjoyed at cafés or food stands.</p>",
-        "created_on": "2024-11-22T00:00:00Z",
-        "status": 1,
-        "excerpt": "A Brazilian sandwich filled with beef, tomatoes, mozzarella, and pickles, served in a French roll.",
-        "updated_on": "2024-11-22T00:00:00Z",
-        "location": "Brazil"
-    }
-}
+]
 
 
