@@ -42,7 +42,7 @@
             <!-- Navigation Links for Larger Screens (md and up) -->
             <div class="d-none d-md-flex flex-row gap-4 align-items-center">
                 <!-- No need for ul/li, just flex items directly -->
-                <a class="nav-link active" aria-current="page" href="#">Next Day</a>
+                <a class="nav-link {% if request.path == home_url %}active{%endif%}" aria-current="page" href="{% url 'home' %}">Home</a>
                 <a class="nav-link {% if request.path == '/quiz/' %}active{% endif %}" href="quiz.html">Quiz</a>
 
             </div>

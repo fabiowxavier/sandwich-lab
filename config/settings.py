@@ -29,7 +29,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEV' in os.environ
+DEBUG = '1' in os.environ
 
 ALLOWED_HOSTS = ['8000-fabiowxavie-sandwichlab-leiztp7srq2.ws.codeinstitute-ide.net',  
     'sandwich-lab-7fc0ba3ca59c.herokuapp.com',  
@@ -57,6 +57,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',  
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware', 
     'django.middleware.common.CommonMiddleware',  
     'django.middleware.csrf.CsrfViewMiddleware',  
@@ -151,6 +152,7 @@ USE_TZ = True
 # # URL to use when referring to static files
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # # Directory where static files will be collected (this is used in production)
 # STATIC_ROOT = BASE_DIR / 'staticfiles'
