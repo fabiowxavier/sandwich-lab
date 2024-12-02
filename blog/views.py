@@ -34,23 +34,33 @@ def post_detail(request, slug):
     """
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
-    comments = post.comments.all().order_by("-created_on")
+    comments = post.comments.all().order_by("-created_on")  # Fetch all comments ordered by creation
     comment_count = post.comments.filter(approved=True).count()
 
+    # Handle comment submission and editing
     if request.method == "POST":
         comment_form = CommentForm(data=request.POST)
-        if comment_form.is_valid():
-            comment = comment_form.save(commit=False)
-            comment.post = post
-            if request.user.is_authenticated:
-                comment.author = request.user
-                comment.name = request.user.username  # Ensure name is the username
-            else:
-                comment.name = "Anonymous"
-            comment.save()
-            messages.add_message(request, messages.SUCCESS, 'Comment submitted and awaiting approval')
 
-    comment_form = CommentForm()
+        if comment_form.is_valid():
+            # Check if it's an update
+            if comment_form.instance.pk:  # If the form has a primary key, it's an update
+                comment = comment_form.save(commit=False)
+                comment.post = post
+                comment.save()
+                messages.success(request, "Comment updated successfully!")
+            else:  # It's a new comment
+                comment = comment_form.save(commit=False)
+                comment.post = post
+                if request.user.is_authenticated:
+                    comment.author = request.user
+                    comment.name = request.user.username
+                else:
+                    comment.name = "Anonymous"
+                comment.save()
+                messages.success(request, "Comment submitted and awaiting approval.")
+                
+    else:
+        comment_form = CommentForm()
 
     return render(request, "blog/post_detail.html", {
         "post": post,
@@ -69,13 +79,21 @@ def comment_edit(request, slug, comment_id):
     if request.method == "POST":
         comment_form = CommentForm(request.POST, instance=comment)
         if comment_form.is_valid():
-            comment_form.save()
+            comment_form.save()  # Save the edited comment
             messages.success(request, "Comment updated successfully!")
-            return HttpResponseRedirect(reverse("post_detail", args=[slug]))
+            return HttpResponseRedirect(reverse("post_detail", args=[slug]))  # Redirect back to the post detail page
         else:
             messages.error(request, "There was an error updating your comment.")
 
-    return HttpResponseRedirect(reverse("post_detail", args=[slug]))
+    # If it's a GET request, show the edit form
+    comment_form = CommentForm(instance=comment)
+
+    return render(request, "blog/post_detail.html", {
+        "post": post,
+        "comments": post.comments.all().order_by("-created_on"),
+        "comment_form": comment_form,
+    })
+
 
 def comment_delete(request, slug, comment_id):
     """

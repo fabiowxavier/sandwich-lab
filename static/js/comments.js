@@ -2,6 +2,7 @@ const editButtons = document.getElementsByClassName("btn-edit");
 const commentText = document.getElementById("id_body");
 const commentForm = document.getElementById("commentForm");
 const submitButton = document.getElementById("submitButton");
+const editButtons = document.getElementsByClassName("btn-edit[_{{{CITATION{{{_1{](https://github.com/cutlerwater/django_blog/tree/6c7e71f82af59e9bd28c5315428457d678d62aa5/App%2Fmodels.py)[_{{{CITATION{{{_2{](https://github.com/johntomnyone/Earn-Xtra-Cash-Blog/tree/c053dd5b176620ddd579f029e9a29b7992adfcde/blog%2Fmodels.py)[_{{{CITATION{{{_3{](https://github.com/hekl0/SimpleBlog/tree/6c0dcdf2e2a97eae87e56e623793f32eea50aed7/blog%2Fmodels.py)
 
 /**
  * Initializes edit functionality for the provided edit buttons.
