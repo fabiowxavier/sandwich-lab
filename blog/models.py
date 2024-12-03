@@ -1,6 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+
+
 # Create your models here.
 STATUS = ((0, "Draft"), (1, "Published"))
 
@@ -15,6 +17,7 @@ class Post(models.Model):
     excerpt = models.TextField(blank=True) 
     updated_on = models.DateTimeField(auto_now=True) 
     location = models.CharField(max_length=100, default="Unknown")
+    image = models.ImageField(upload_to='post_images/', null=True, blank=True)
     
     class Meta: 
         ordering = ["-created_on"] 
@@ -37,3 +40,11 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"Comment {self.body} by {self.name}"
+    
+
+class Like(models.Model):
+    post = models.ForeignKey('Post', on_delete=models.CASCADE, related_name='likes')
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"Like from {self.user} on {self.post}"

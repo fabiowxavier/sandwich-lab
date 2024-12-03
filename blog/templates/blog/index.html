@@ -1,18 +1,6 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-<!-- Events Section -->
-<div class="container mt-5">
-    <h2>Upcoming Events</h2>
-    {% for event in event_list %}
-    <a href="{% url 'event_detail' event.event_id %}">
-        <h2>{{ event.event_name }}</h2>
-    </a>
-    {% endfor %}
-</div>
-
-<!-- Blog Section -->
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 mt-3 left">
@@ -29,7 +17,19 @@
                                 <p class="card-text">{{ post.excerpt }}</p>
                             </a>
                             <hr>
-                            <p class="card-text text-muted h6">{{ post.location }}</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <!-- Location on the left -->
+                                <p class="card-text text-muted h6 mb-0">{{ post.location }}</p>
+                                
+                                <!-- Like and Comment counts on the right -->
+                                <div class="ml-3">
+                                    <span class="mr-3">
+                                        <i class="card-text far fa-thumbs-up"></i> {{ post.like_count }}
+                                    <span>
+                                        <i class="card-text far fa-comments"></i> {{ post.comment_count }}
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,6 @@
     </nav>
     {% endif %}
 </div>
-
 {% endblock %}
 
 {% block copyright %}

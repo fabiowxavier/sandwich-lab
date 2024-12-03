@@ -1,10 +1,8 @@
 const editButtons = document.getElementsByClassName("btn-edit");
 const commentText = document.getElementById("id_body");
 const commentForm = document.getElementById("commentForm");
-const submitButton = document.getElementById("submitButton");
-const editButtons = document.getElementsByClassName("btn-edit[_{{{CITATION{{{_1{](https://github.com/cutlerwater/django_blog/tree/6c7e71f82af59e9bd28c5315428457d678d62aa5/App%2Fmodels.py)[_{{{CITATION{{{_2{](https://github.com/johntomnyone/Earn-Xtra-Cash-Blog/tree/c053dd5b176620ddd579f029e9a29b7992adfcde/blog%2Fmodels.py)[_{{{CITATION{{{_3{](https://github.com/hekl0/SimpleBlog/tree/6c0dcdf2e2a97eae87e56e623793f32eea50aed7/blog%2Fmodels.py)
+const submitButton = document.querySelector("button[type='submit']");
 
-/**
  * Initializes edit functionality for the provided edit buttons.
  * 
  * For each button in the `editButtons` collection:
@@ -16,12 +14,17 @@ const editButtons = document.getElementsByClassName("btn-edit[_{{{CITATION{{{_1{
  */
 for (let button of editButtons) {
   button.addEventListener("click", (e) => {
-    let commentId = e.target.getAttribute("comment_id");  // Get comment ID
-    let commentContent = document.getElementById(`comment${commentId}`).innerText;  // Get comment content
-    commentText.value = commentContent;  // Set the textarea content to the comment's content
-    submitButton.innerText = "Update";  // Change button text to "Update"
-    
-    // Update the form action to the correct edit URL for this comment
+    // Get the comment ID and content
+    let commentId = e.target.getAttribute("comment_id");
+    let commentContent = document.getElementById(`comment${commentId}`).innerText;
+
+    // Fill the textarea with the comment content
+    commentText.value = commentContent;
+
+    // Change the submit button text to "Update"
+    submitButton.innerText = "Update";
+
+    // Update the form action URL to the edit URL
     commentForm.setAttribute("action", `/blog/${e.target.getAttribute("slug")}/edit_comment/${commentId}`);
   });
 }

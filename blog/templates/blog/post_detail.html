@@ -38,12 +38,37 @@
         </div>
     </div>
 
-    <!-- Displaying Comments -->
+
+    <!-- Displaying Likes -->
     <div class="row">
-        <div class="col-md-8 card mb-4 mt-3">
-            <h3>Comments:</h3>
-            <div class="card-body">
-                {% for comment in comments %}
+        <div class="col-12">
+            <strong class="text-secondary">
+                <i class="far fa-thumbs-up"></i> {{ like_count }} Likes
+            </strong>
+        </div>
+        <div class="col-12">
+            <form method="post">
+                {% csrf_token %}
+                <button type="submit" name="like" class="btn btn-primary">
+                    {% if user.is_authenticated %}
+                    {% if request.user in post.likes.all %}
+                    Unlike
+                    {% else %}
+                    Like
+                    {% endif %}
+                    {% else %}
+                    Log in to like this post
+                    {% endif %}
+                </button>
+            </form>
+        </div>
+    </div>
+  <!-- Displaying Comments -->
+<div class="row">
+    <div class="col-md-8 card mb-4 mt-3">
+        <h3>Comments:</h3>
+        <div class="card-body">
+            {% for comment in comments %}
                 <div class="p-2 comments
                     {% if not comment.approved and comment.author == user %}
                     faded{% elif not comment.approved %} d-none{% endif %}">
@@ -63,34 +88,53 @@
                         onclick="window.location.href='{% url 'comment_delete' slug=post.slug comment_id=comment.id %}'">Delete</button>
                     {% endif %}
                 </div>
-                {% endfor %}
-            </div>
+            {% endfor %}
         </div>
+    </div>
 
-        <!-- Creating or Editing Comments -->
-        <div class="col-md-4 card mb-4 mt-3">
-            <div class="card-body">
-                {% if user.is_authenticated %}
-                <h3>Leave a comment:</h3>
-                <p>Posting as: {{ user.username }}</p>
+    <!-- Creating/Editing Comments -->
+    <div class="col-md-4 card mb-4 mt-3">
+        <div class="card-body">
+            {% if user.is_authenticated %}
+            <h3>Leave a comment:</h3>
+            <form id="commentForm" method="post">
+                {% csrf_token %}
+                {{ comment_form | crispy }}
+                <button type="submit" class="btn btn-signup btn-lg">
+                    {% if comment_form.instance.pk %}
+                    Update
+                    {% else %}
+                    Submit
+                    {% endif %}
+                </button>
+            </form>
+            {% else %}
+            <p>Log in to leave a comment</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
 
-                <!-- The form handles both creating and editing a comment -->
-                <form id="commentForm" method="post">
-                    {% csrf_token %}
-                    {{ comment_form | crispy }}
-
-                    <button type="submit" class="btn btn-signup btn-lg">
-                        {% if comment_form.instance.pk %}
-                        Update
-                        {% else %}
-                        Submit
-                        {% endif %}
-                    </button>
-                </form>
-                {% else %}
-                <p>Log in to leave a comment</p>
-                {% endif %}
-            </div>
+    <!-- Creating New Comments -->
+    <div class="col-md-4 card mb-4 mt-3">
+        <div class="card-body">
+            {% if user.is_authenticated %}
+            <h3>Leave a comment:</h3>
+            <form id="commentForm" method="post">
+                {% csrf_token %}
+                <!-- Add the form rendering here -->
+                {{ comment_form | crispy }}
+                <button type="submit" class="btn btn-signup btn-lg">
+                    {% if comment_form.instance.pk %}
+                    Update
+                    {% else %}
+                    Submit
+                    {% endif %}
+                </button>
+            </form>
+            {% else %}
+            <p>Log in to leave a comment</p>
+            {% endif %}
         </div>
     </div>
 </div>
