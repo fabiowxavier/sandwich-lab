@@ -3,6 +3,7 @@ const commentText = document.getElementById("id_body");
 const commentForm = document.getElementById("commentForm");
 const submitButton = document.querySelector("button[type='submit']");
 
+/*
  * Initializes edit functionality for the provided edit buttons.
  * 
  * For each button in the `editButtons` collection:
@@ -12,6 +13,7 @@ const submitButton = document.querySelector("button[type='submit']");
  * - Updates the submit button's text to "Update".
  * - Sets the form's action attribute to the `edit_comment/{commentId}` endpoint.
  */
+
 for (let button of editButtons) {
   button.addEventListener("click", (e) => {
     // Get the comment ID and content

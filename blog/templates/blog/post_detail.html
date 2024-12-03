@@ -11,7 +11,11 @@
                 <p class="post-subtitle">{{ post.location }} </p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
-                <img src="{% static 'images/sand.jpeg' %}" class="scale" alt="placeholder">
+                {% if post.image %}
+                    <img src="{{ post.image.url }}" class="scale" alt="Post Image">
+                {% else %}
+                    <img src="{% static 'images/sand.jpeg' %}" class="scale" alt="Placeholder Image">
+                {% endif %}
             </div>
         </div>
     </div>
@@ -83,9 +87,8 @@
                     <p class="approval">This comment is awaiting approval</p>
                     {% endif %}
                     {% if user.is_authenticated and comment.author == user %}
-                    <button class="btn btn-edit" comment_id="{{ comment.id }}" slug="{{ post.slug }}">Edit</button>
-                    <button class="btn btn-delete"
-                        onclick="window.location.href='{% url 'comment_delete' slug=post.slug comment_id=comment.id %}'">Delete</button>
+                    <button class="btn btn-edit" type="button" comment_id="{{ comment.id }}" alt="edit button" slug="{{ post.slug }}">Edit</button>
+                    <button class="btn btn-delete" type="button" alt="Delete button" onclick="window.location.href='{% url 'comment_delete' slug=post.slug comment_id=comment.id %}'">Delete</button>
                     {% endif %}
                 </div>
             {% endfor %}

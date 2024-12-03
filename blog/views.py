@@ -12,9 +12,9 @@ class PostList(generic.ListView):
     """
     Returns all published posts and displays them in a page of six posts.
     """
-    queryset = Post.objects.filter(status=1)
+    queryset = Post.objects.filter(status=1).order_by('title')
     template_name = "blog/index.html"
-    paginate_by = 6
+    paginate_by = 9
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -23,6 +23,15 @@ class PostList(generic.ListView):
             post.comment_count = post.comments.filter(approved=True).count()
             post.like_count = post.likes.count()
         return context
+
+def post_list(request):
+    """
+    List all published posts on the home page.
+    """
+    queryset = Post.objects.filter(status=1)
+    return render(request, "blog/index.html", {
+        "post_list": queryset,
+    })
 
 def post_detail(request, slug):
     """
