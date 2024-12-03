@@ -12,9 +12,9 @@
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 {% if post.image %}
-                    <img src="{{ post.image.url }}" class="scale" alt="Post Image">
+                <img src="{{ post.image.url }}" class="scale" alt="Post Image">
                 {% else %}
-                    <img src="{% static 'images/sand.jpeg' %}" class="scale" alt="Placeholder Image">
+                <img src="{% static 'images/sand.jpeg' %}" class="scale" alt="Placeholder Image">
                 {% endif %}
             </div>
         </div>
@@ -67,12 +67,12 @@
             </form>
         </div>
     </div>
-  <!-- Displaying Comments -->
-<div class="row">
-    <div class="col-md-8 card mb-4 mt-3">
-        <h3>Comments:</h3>
-        <div class="card-body">
-            {% for comment in comments %}
+    <!-- Displaying Comments -->
+    <div class="row">
+        <div class="col-md-8 card mb-4 mt-3">
+            <h3>Comments:</h3>
+            <div class="card-body">
+                {% for comment in comments %}
                 <div class="p-2 comments
                     {% if not comment.approved and comment.author == user %}
                     faded{% elif not comment.approved %} d-none{% endif %}">
@@ -87,57 +87,36 @@
                     <p class="approval">This comment is awaiting approval</p>
                     {% endif %}
                     {% if user.is_authenticated and comment.author == user %}
-                    <button class="btn btn-edit" type="button" comment_id="{{ comment.id }}" alt="edit button" slug="{{ post.slug }}">Edit</button>
-                    <button class="btn btn-delete" type="button" alt="Delete button" onclick="window.location.href='{% url 'comment_delete' slug=post.slug comment_id=comment.id %}'">Delete</button>
+                    <button class="btn btn-edit" type="button" comment_id="{{ comment.id }}" alt="edit button"
+                        slug="{{ post.slug }}">Edit</button>
+                    <button class="btn btn-delete" type="button" alt="Delete button"
+                        onclick="window.location.href='{% url 'comment_delete' slug=post.slug comment_id=comment.id %}'">Delete</button>
                     {% endif %}
                 </div>
-            {% endfor %}
+                {% endfor %}
+            </div>
         </div>
-    </div>
 
-    <!-- Creating/Editing Comments -->
-    <div class="col-md-4 card mb-4 mt-3">
-        <div class="card-body">
-            {% if user.is_authenticated %}
-            <h3>Leave a comment:</h3>
-            <form id="commentForm" method="post">
-                {% csrf_token %}
-                {{ comment_form | crispy }}
-                <button type="submit" class="btn btn-signup btn-lg">
-                    {% if comment_form.instance.pk %}
-                    Update
-                    {% else %}
-                    Submit
-                    {% endif %}
-                </button>
-            </form>
-            {% else %}
-            <p>Log in to leave a comment</p>
-            {% endif %}
-        </div>
-    </div>
-</div>
-
-    <!-- Creating New Comments -->
-    <div class="col-md-4 card mb-4 mt-3">
-        <div class="card-body">
-            {% if user.is_authenticated %}
-            <h3>Leave a comment:</h3>
-            <form id="commentForm" method="post">
-                {% csrf_token %}
-                <!-- Add the form rendering here -->
-                {{ comment_form | crispy }}
-                <button type="submit" class="btn btn-signup btn-lg">
-                    {% if comment_form.instance.pk %}
-                    Update
-                    {% else %}
-                    Submit
-                    {% endif %}
-                </button>
-            </form>
-            {% else %}
-            <p>Log in to leave a comment</p>
-            {% endif %}
+        <!-- Creating/Editing Comments -->
+        <div class="col-md-4 card mb-4 mt-3">
+            <div class="card-body">
+                {% if user.is_authenticated %}
+                <h3>Leave a comment:</h3>
+                <form id="commentForm" method="post">
+                    {% csrf_token %}
+                    {{ comment_form | crispy }}
+                    <button type="submit" class="btn btn-signup btn-lg">
+                        {% if comment_form.instance.pk %}
+                        Update
+                        {% else %}
+                        Submit
+                        {% endif %}
+                    </button>
+                </form>
+                {% else %}
+                <p>Log in to leave a comment</p>
+                {% endif %}
+            </div>
         </div>
     </div>
 </div>
