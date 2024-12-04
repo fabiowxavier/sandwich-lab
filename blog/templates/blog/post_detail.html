@@ -11,7 +11,11 @@
                 <p class="post-subtitle">{{ post.location }} </p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
-                <img src="{% static 'images/sand.jpeg' %}" class="scale" alt="Placeholder Image">
+                {% if post.image %}
+                <img class="card-img-top" src="{% static 'images/sand.jpeg' %}" alt="placeholder image">
+                {% else %}
+                <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="{{ post.title }}">
+                {% endif %}
             </div>
         </div>
     </div>
@@ -49,7 +53,7 @@
         <div class="col-12">
             <form method="post">
                 {% csrf_token %}
-                <button type="submit" name="like" class="btn btn-primary">
+                <button type="submit" name="like" class="btn-like btn">
                     {% if user.is_authenticated %}
                     {% if request.user in post.likes.all %}
                     Unlike

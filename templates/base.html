@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
 
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -63,9 +64,7 @@
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel" href="{% url 'home' %}">
-                        Sandwich Lab
-                    </h5>
+                    <a id="logo" class="navbar-brand" href="{% url 'home' %}"> Sandwich Lab</a>
                     <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -130,10 +129,11 @@
             {% block copyright %}
             Made by Fabio Williams-Xavier
             {% endblock copyright %}</p>
-        <p class="m-0 text-center text-white">Follow us: <i class="fab fa-facebook-square ms-3"></i>
-            <i class="fab fa-twitter-square ms-3"></i>
-            <i class="fab fa-instagram-square ms-3"></i>
-            <i class="fab fa-youtube-square ms-3"></i>
+        <p class="m-0 text-center text-white">Follow us: 
+            <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Den_GB"><i class="social-icons fab fa-facebook-square ms-3"></i></a>
+            <a href="https://x.com/?lang=en"><i class="social-icons fab fa-twitter-square ms-3" ></i></a>
+            <a href="https://www.instagram.com/"><i class="social-icons fab fa-instagram-square ms-3"></i></a>
+            <a href="https://www.youtube.com/"><i class="social-icons fab fa-youtube-square ms-3"></i></a>
         </p>
     </footer>
 
