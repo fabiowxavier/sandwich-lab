@@ -19,8 +19,7 @@ if os.path.isfile('env.py'):
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -31,7 +30,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = '1' in os.environ
+DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = ['8000-fabiowxavie-sandwichlab-leiztp7srq2.ws.codeinstitute-ide.net',  
     'sandwich-lab-7fc0ba3ca59c.herokuapp.com',  
@@ -158,33 +157,21 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
+# Static files (CSS, JavaScript, Images)
+STATIC_URL = '/static/'  # URL to access static files
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
-
-# DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-# # URL to use when referring to static files
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
+# Directory where static files will be collected during deployment
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-# # Directory where static files will be collected (this is used in production)
-# STATIC_ROOT = BASE_DIR / 'staticfiles'
+# Additional directories where static files are located
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
-# # Additional directories where static files are located (for development)
-# STATICFILES_DIRS = [BASE_DIR / 'static']
+# Whitenoise storage for compressed and manifest files
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+MEDIA_URL = '/media/'
 
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': os.getenv('ddrxin4ki'),  
-    'API_KEY': os.getenv('192645582847956'),  
-    'API_SECRET': os.getenv('dMzQCDVT72WaAaMM4UCKnWG5sN4')  
-}
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-MEDIA_URL = 'https://res.cloudinary.com/{}/'.format(os.getenv('ddrxin4ki'))  
