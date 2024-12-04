@@ -183,8 +183,7 @@ color: #E84610;
     color: #445261;
 }
 
-.post-link:hover,
-.page-link {
+.post-link:hover {
     color: #E84610;
     
 }
@@ -203,7 +202,7 @@ color: #E84610;
 .btn-signup,
 .btn-edit {
     background-color: #6c757d;
-    color: #E84610;
+    color: #fffdf2;
 }
 
 .btn-signup:hover,
@@ -236,6 +235,19 @@ color: #E84610;
     color: #E84610;
     background: transparent;
     border: none;
+}
+
+.page-link {
+    color: #E84610;
+    background: transparent;
+    border: none;
+}
+
+.page-link:hover,
+.page-link:active {
+    color: #fffdf2;
+    border: none;
+    background: #E84610;
 }
 
 .faded {

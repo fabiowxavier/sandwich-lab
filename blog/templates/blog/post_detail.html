@@ -105,7 +105,7 @@
                 <form id="commentForm" method="post">
                     {% csrf_token %}
                     {{ comment_form | crispy }}
-                    <button type="submit" class="btn btn-signup btn-lg">
+                    <button type="submit" class="btn btn-signup btn-md">
                         {% if comment_form.instance.pk %}
                         Update
                         {% else %}
