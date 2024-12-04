@@ -19,7 +19,7 @@ class Post(models.Model):
     excerpt = models.TextField(blank=True) 
     updated_on = models.DateTimeField(auto_now=True) 
     location = models.CharField(max_length=100, default="Unknown")
-    image = models.ImageField(upload_to='post_images/', null=True, blank=True)
+    
     
     class Meta: 
         ordering = ["-created_on"] 

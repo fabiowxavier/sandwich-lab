@@ -1,7 +1,6 @@
 <!-- index.html -->
 {% extends "base.html" %}
 {% load static %}
-{% load crispy_forms_tags %}
 
 {% block content %}
 
@@ -16,18 +15,13 @@
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
-                                <img class="card-img-top" src="{% static 'images/default.jpg' %}"
+                                <img class="card-img-top" src="{% static 'images/sand.jpg' %}"
                                     alt="placeholder image">
                                 {% else %}
                                 <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="{{ post.title }}">
                                 {% endif %}
                                 <div class="image-flash"></div>
                                 <!-- Display the image if available -->
-                                {% if post.image %}
-                                <img src="{{ post.image.url }}" alt="Post Image" class="img-fluid">
-                                {% else %}
-                                <img src="{% static 'images/sand.jpeg' %}" alt="Placeholder Image" class="img-fluid">
-                                {% endif %}
                             </div>
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
                                 <h2 class="card-title">{{ post.title }}</h2>

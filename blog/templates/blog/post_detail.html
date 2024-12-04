@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 {% block content %}
-{% load static %}
 {% load crispy_forms_tags %}
 
 <div class="masthead">
@@ -11,11 +10,7 @@
                 <p class="post-subtitle">{{ post.location }} </p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
-                {% if post.image %}
-                <img src="{{ post.image.url }}" class="scale" alt="Post Image">
-                {% else %}
                 <img src="{% static 'images/sand.jpeg' %}" class="scale" alt="Placeholder Image">
-                {% endif %}
             </div>
         </div>
     </div>
