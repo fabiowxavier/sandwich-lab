@@ -205,11 +205,10 @@ color: #E84610;
     color: #fffdf2;
 }
 
-.btn-signup:hover,
-.btn-signup:active {
-    background-color: transparent;
-    color: #E84610;
-}
+.btn-signup:hover, .btn-signup:active,
+.btn-edit:hover, .btn-edit:active { 
+    background-color: transparent; 
+    color: #E84610; }
 
 .link {
     background-color: transparent;
@@ -269,4 +268,9 @@ span.mr-3 {
 
 .social-icons {
     color: #fffdf2;
+}
+
+.about-img {
+    max-width: 100%;  
+    height: auto;
 }
