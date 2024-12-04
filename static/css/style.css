@@ -120,6 +120,7 @@ color: #E84610;
     font-size: 1.5rem;
 }
 
+
 .image-container {
     position: relative;
 }
@@ -184,7 +185,8 @@ color: #E84610;
 
 .post-link:hover,
 .page-link {
-    color: rgb(23, 22, 22);
+    color: #E84610;
+    
 }
 
 .post-title {
@@ -201,18 +203,18 @@ color: #E84610;
 .btn-signup,
 .btn-edit {
     background-color: #6c757d;
-    color: #fff;
+    color: #E84610;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
-    background-color: #fff;
-    color: #23BBBB;
+    background-color: transparent;
+    color: #E84610;
 }
 
 .link {
-    color: #23BBBB;
-    text-decoration: none;
+    background-color: transparent;
+    color: #E84610;
 }
 
 .link:hover,
@@ -227,10 +229,7 @@ color: #E84610;
     background: #E84610;
 }
 
-.btn-delete {
-    color: #fff;
-    background: #E84610;
-}
+
 
 .btn-like:hover,
 .btn-like:active {

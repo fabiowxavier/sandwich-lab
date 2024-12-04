@@ -89,7 +89,7 @@
                     {% if user.is_authenticated and comment.author == user %}
                     <button class="btn btn-edit" type="button" comment_id="{{ comment.id }}" alt="edit button"
                         slug="{{ post.slug }}">Edit</button>
-                    <button class="btn btn-delete" type="button" alt="Delete button"
+                    <button class="btn btn-like" type="button" alt="Delete button"
                         onclick="window.location.href='{% url 'comment_delete' slug=post.slug comment_id=comment.id %}'">Delete</button>
                     {% endif %}
                 </div>
