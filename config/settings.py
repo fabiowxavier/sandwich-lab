@@ -183,8 +183,8 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': os.getenv('ddrxin4ki'),  
-    'API_KEY': os.getenv('625257822662144'),  
-    'API_SECRET': os.getenv('n9qorFwDcRRHCbmvhjoawYhdnCo')  
+    'API_KEY': os.getenv('192645582847956'),  
+    'API_SECRET': os.getenv('dMzQCDVT72WaAaMM4UCKnWG5sN4')  
 }
 
 MEDIA_URL = 'https://res.cloudinary.com/{}/'.format(os.getenv('ddrxin4ki'))  
