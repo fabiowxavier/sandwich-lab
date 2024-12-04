@@ -186,4 +186,4 @@ CLOUDINARY_STORAGE = {
     'API_SECRET': os.getenv('n9qorFwDcRRHCbmvhjoawYhdnCo')
 }
 
-MEDIA_URL = 'https://res.cloudinary.com/{}/'.format(os.getenv('CLOUDINARY_CLOUD_NAME'))
+MEDIA_URL = 'https://res.cloudinary.com/{}/'.format(os.getenv('ddrxin4ki'))
