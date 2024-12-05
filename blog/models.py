@@ -6,8 +6,9 @@ from cloudinary.models import CloudinaryField
 
 # Create your models here.
 STATUS = ((0, "Draft"), (1, "Published"))
-
-
+"""
+Stores a single blog post entry related to :model:`auth.User`.
+"""
 class Post(models.Model): 
     title = models.CharField(max_length=200, unique=True) 
     slug = models.SlugField(max_length=200, unique=True) 
