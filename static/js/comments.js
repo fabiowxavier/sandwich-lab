@@ -1,32 +1,30 @@
-const editButtons = document.getElementsByClassName("btn-edit");
-const commentText = document.getElementById("id_body");
-const commentForm = document.getElementById("commentForm");
-const submitButton = document.getElementById("submitButton");
+document.addEventListener("DOMContentLoaded", function() {
+    const editButtons = document.getElementsByClassName("btn-edit");  // Get all edit buttons
+    const commentText = document.getElementById("id_body");         // The textarea where comment is entered
+    const commentForm = document.getElementById("commentForm");      // The form for comments
+    const submitButton = document.getElementById("submitButton");    // The submit button for the form
 
-const deleteModal = new bootstrap.Modal(document.getElementById("deleteModal"));
-const deleteButtons = document.getElementsByClassName("btn-delete");
-const deleteConfirm = document.getElementById("deleteConfirm");
+    // Add click event listener to each edit button
+    for (let button of editButtons) {
+        button.addEventListener("click", function(e) {
+            // Get the comment ID from the button's data-comment-id attribute
+            const commentId = e.target.getAttribute("data-comment-id");
+            // Get the content of the comment using the comment ID
+            const commentContent = document.getElementById(`comment${commentId}`).innerText;
 
-/*
- * Initializes edit functionality for the provided edit buttons.
- * 
- * For each button in the `editButtons` collection:
- * - Retrieves the associated comment's ID upon click.
- * - Fetches the content of the corresponding comment.
- * - Populates the `commentText` input/textarea with the comment's content for editing.
- * - Updates the submit button's text to "Update".
- * - Sets the form's action attribute to the `edit_comment/{commentId}` endpoint.
- */
+            // Populate the textarea with the comment content for editing
+            commentText.value = commentContent;
 
-for (let button of editButtons) {
-    button.addEventListener("click", (e) => {
-        let commentId = e.target.getAttribute("data-comment_id");
-        let commentContent = document.getElementById(`comment${commentId}`).innerText;
-        commentText.value = commentContent;
-        submitButton.innerText = "Update";
-        commentForm.setAttribute("action", `edit_comment/${commentId}`);
-    });
-}
+            // Change the submit button's text to "Update"
+            submitButton.innerText = "Update";
+
+            // Change the form's action URL to the correct URL for editing this comment
+            commentForm.setAttribute("action", `/edit_comment/${commentId}/`);  // The endpoint for editing the comment
+        });
+    }
+});
+
+
 
 /*
  * Initializes deletion functionality for the provided delete buttons.
@@ -38,6 +36,7 @@ for (let button of editButtons) {
  * - Displays a confirmation modal (`deleteModal`) to prompt 
  * the user for confirmation before deletion.
  */
+
 for (let button of deleteButtons) {
     button.addEventListener("click", (e) => {
         let commentId = e.target.getAttribute("data-comment_id");

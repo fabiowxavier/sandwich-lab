@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic
 from django.contrib import messages
 from django.http import HttpResponseRedirect
+from django.shortcuts import redirect
 from .models import Post, Comment, Like
 from .forms import CommentForm
 
@@ -103,38 +104,24 @@ def post_detail(request, slug):
     })
 
 
-def comment_edit(request, slug, comment_id):
-    """
-    Display an individual comment for edit.
 
-    **Context**
-
-    ``post``
-        An instance of :model:`blog.Post`.
-    ``comment``
-        A single comment related to the post.
-    ``comment_form``
-        An instance of :form:`blog.CommentForm`
-    """
-    post = get_object_or_404(Post, slug=slug)
-    comment = get_object_or_404(Comment, pk=comment_id)
-
+def comment_edit(request, comment_id):
+    # Retrieve the comment object by its ID
+    comment = get_object_or_404(Comment, id=comment_id)
+    
+    # Check if the request method is POST
     if request.method == "POST":
         comment_form = CommentForm(request.POST, instance=comment)
         if comment_form.is_valid():
-            comment_form.save()  
+            # Save the updated comment
+            comment_form.save()
             messages.success(request, "Comment updated successfully!")
-            return HttpResponseRedirect(reverse("post_detail", args=[slug]))
-        else:
-            messages.error(request, "There was an error updating your comment.")
+            # Redirect to the post detail page after update
+            return redirect('post_detail', slug=comment.post.slug)  # Redirect to the post detail page
     else:
         comment_form = CommentForm(instance=comment)
-
-    return render(request, "blog/post_detail.html", {
-        "post": post,
-        "comments": post.comments.all().order_by("-created_on"),
-        "comment_form": comment_form,
-    })
+    
+    return render(request, 'blog/post_detail.html', {'comment_form': comment_form, 'comment': comment})
 
 
 def comment_delete(request, slug, comment_id):
