@@ -1,7 +1,11 @@
 const editButtons = document.getElementsByClassName("btn-edit");
 const commentText = document.getElementById("id_body");
 const commentForm = document.getElementById("commentForm");
-const submitButton = document.querySelector("button[type='submit']");
+const submitButton = document.getElementById("submitButton");
+
+const deleteModal = new bootstrap.Modal(document.getElementById("deleteModal"));
+const deleteButtons = document.getElementsByClassName("btn-delete");
+const deleteConfirm = document.getElementById("deleteConfirm");
 
 /*
  * Initializes edit functionality for the provided edit buttons.
@@ -15,39 +19,29 @@ const submitButton = document.querySelector("button[type='submit']");
  */
 
 for (let button of editButtons) {
-  button.addEventListener("click", (e) => {
-    // Get the comment ID and content
-    let commentId = e.target.getAttribute("comment_id");
-    let commentContent = document.getElementById(`comment${commentId}`).innerText;
-
-    // Fill the textarea with the comment content
-    commentText.value = commentContent;
-
-    // Change the submit button text to "Update"
-    submitButton.innerText = "Update";
-
-    // Update the form action URL to the edit URL
-    commentForm.setAttribute("action", `/blog/${e.target.getAttribute("slug")}/edit_comment/${commentId}`);
-  });
+    button.addEventListener("click", (e) => {
+        let commentId = e.target.getAttribute("data-comment_id");
+        let commentContent = document.getElementById(`comment${commentId}`).innerText;
+        commentText.value = commentContent;
+        submitButton.innerText = "Update";
+        commentForm.setAttribute("action", `edit_comment/${commentId}`);
+    });
 }
 
-const deleteButtons = document.getElementsByClassName("btn-delete");
-
-/**
-* Initializes delete functionality for the provided delete buttons.
-*
-* For each button in the `deleteButtons` collection:
-* - Retrieves the associated comment's ID upon click.
-* - Redirects the user to the delete URL for that comment.
-*/
+/*
+ * Initializes deletion functionality for the provided delete buttons.
+ * 
+ * For each button in the `deleteButtons` collection:
+ * - Retrieves the associated comment's ID upon click.
+ * - Updates the `deleteConfirm` link's href to point to the 
+ * deletion endpoint for the specific comment.
+ * - Displays a confirmation modal (`deleteModal`) to prompt 
+ * the user for confirmation before deletion.
+ */
 for (let button of deleteButtons) {
-  button.addEventListener("click", (e) => {
-    let commentId = e.target.getAttribute("comment_id");  // Ensure this is set correctly
-    let slug = e.target.getAttribute("slug");  // Get the correct slug from the button
-
-    // Ensure that both slug and commentId are valid before redirecting
-    if (slug && commentId) {
-      window.location.href = `/blog/${slug}/delete_comment/${commentId}/`; // Correct URL
-    }
-  });
+    button.addEventListener("click", (e) => {
+        let commentId = e.target.getAttribute("data-comment_id");
+        deleteConfirm.href = `delete_comment/${commentId}`;
+        deleteModal.show();
+    });
 }
