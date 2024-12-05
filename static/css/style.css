@@ -8,6 +8,7 @@ body {
 
 .nav-link:hover {
     color: #6c757d;
+    transform: translateY(-1px);
 }
 
 .navbar .navbar-brand {
@@ -19,6 +20,7 @@ body {
 
 .navbar .navbar-brand:hover {
     color: #4A4A4F;
+    transform: translateY(-5px);
 }
 
 .brand {
@@ -123,6 +125,15 @@ color: #E84610;
     background-color: transparent;
 }
 
+.card.custom-shadow { 
+    box-shadow: 0 4px 8px rgba(236, 72, 31, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+} 
+.card.custom-shadow:hover { 
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(236, 72, 31, 0.3); 
+}
+
 .card-title {
     font-size: 1.5rem;
 }
@@ -156,7 +167,7 @@ color: #E84610;
     overflow: hidden;
     position: relative;
     display: inline-block;
-    height: vh;
+    height: auto;
     width: 100%;
 }
 
