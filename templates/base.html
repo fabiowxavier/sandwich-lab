@@ -1,4 +1,5 @@
 {% load static %}
+
 {% url 'home' as home_url %}
 {% url 'about' as about_url %}
 {% url 'account_login' as login_url %}
@@ -10,7 +11,7 @@
 
 <head>
     <title>Sandwich Lab</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Google Fonts CSS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -35,7 +36,7 @@
     <!-- Navigation -->
     <nav id="navBar" class="navbar">
         <div class="container-fluid">
-            <a id="logo" class="navbar-brand" href="{% url 'home' %}"> Sandwich Lab</a>
+            <a class="navbar-brand" href="{% url 'home' %}"> Sandwich Lab</a>
             <!-- Toggle button for small screens -->
             <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -62,9 +63,9 @@
             </div>
             <!-- Offcanvas menu for smaller screens -->
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
+                aria-labelledby="offcanvasNavbar">
                 <div class="offcanvas-header">
-                    <a id="logo" class="navbar-brand" href="{% url 'home' %}"> Sandwich Lab</a>
+                    <a class="navbar-brand" href="{% url 'home' %}"> Sandwich Lab</a>
                     <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
