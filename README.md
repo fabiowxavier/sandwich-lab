@@ -1,11 +1,25 @@
-![Sandwich Lab](https://path_to_your_image.jpg)
 
-Welcome to Sandwich Lab, where we celebrate the diverse and delectable world of sandwiches. My name is Fabio, and I am a coding enthusiast with a deep love for culinary adventures. Born and raised in Porto, I grew up enjoying a sandwich that holds a special place in my heart—the Francesinha. The project is part of the Code Institute’s Full-Stack Developer course, focusing on the Django framework, PostgreSQL database integration, and basic CRUD functionality.
+
+![Sandwich Lab](static/images/logo.png)
+
+Hey there! Welcome to Sandwich Lab, where we dive into the delicious world of sandwiches. I’m Fabio, a coding enthusiast with a serious passion for culinary adventures. Growing up in Porto, one sandwich always stole the spotlight for me—the Francesinha.
+
+This project is part of my journey in the Code Institute’s Full-Stack Developer course, where I’m focusing on:
+
+- Mastering the Django framework
+
+- Integrating PostgreSQL databases
+
+- Implementing essential CRUD functionalities
+
+So come along and join me as I blend my love for sandwiches and coding, one tasty line at a time!
+
+![Mockup Image](static/images/sitemockup.png)
+
 
 ### Sandwich Lab Homepage
 
 - **Live site**: [Sandwich Lab](https://sandwich-lab-7fc0ba3ca59c.herokuapp.com/)
-- **For Admin access with relevant sign-in information,[click here](https://sandwich-lab-7fc0ba3ca59c.herokuapp.com/admin/).
 - **GitHub repository**: [Sandwich Lab GitHub](https://github.com/fabiowxavier/sandwich-lab)
 
 ---
@@ -53,10 +67,10 @@ Welcome to Sandwich Lab, where we celebrate the diverse and delectable world of 
 
 Sandwich Lab is a platform that allows users to:
 
-- Browse a variety of sandwiches
-- Add their own sandwich recipes and ingredients
-- Leave reviews on different sandwiches
-- Manage their profiles and view previously added sandwiches
+- Browse a variety of mouth-watering sandwiches
+- Like their favorite sandwiches and see what other users liked
+- Leave Comments on different sandwiches
+- Check Out what others are saying in their comments
 
 This platform is designed to bring together people who love sandwiches and want to share their creations with the world.
 
@@ -65,66 +79,119 @@ This platform is designed to bring together people who love sandwiches and want 
 ## UX - User Experience
 
 ### Design Inspiration
-The design of **Sandwich Lab** was inspired by my love of food and the joy of sharing great sandwich recipes. I wanted to create a space where people could share their sandwich ideas and recipes, interact with one another, and build a community of sandwich enthusiasts.
+The design of **Sandwich Lab** springs from my deep love for the Francesinha and the joy it brings me to share this culinary gem with others. Inspired by the rich flavors and cultural heritage of this iconic sandwich, I envisioned a space where fellow sandwich enthusiasts could explore, discover sandwiches from around the world.
+
 
 ### Colour Scheme
-- **Primary Color**: #FF6347 (Tomato Red)
-- **Secondary Color**: #FFD700 (Golden Yellow)
-- **Accent Color**: #FFFFFF (White)
-- **Background**: #F5F5F5 (Light Grey)
+- **Primary Color**: #EC481F
+- **Secondary Color**: #4A4A4F;
+- **Accent Color**: #EC481F
+- **Background**: #F5F0E7 
+
+![color pallete](static/images/COLORPALLETE.png)
 
 This combination ensures a vibrant yet clean appearance, matching the food-related theme of the website.
 
 ### Font
-- **Logo & Headers**: Bungee Shade
-- **Body Text & Interactive Elements**: Roboto
+- **Logo**: Bungee Shade
+- **Body Text & Interactive Elements & Headers**: Helvetica Neue
 
 ---
 
 ## Project Planning
 
 ### Strategy Plane
-The primary goal of **Sandwich Lab** is to offer a user-friendly platform for sandwich enthusiasts to create, share, and discover new sandwich recipes. This project aims to streamline the process of recipe-sharing and allow users to express their love for sandwiches.
+The primary goal of **Sandwich Lab** s to offer a user-friendly platform for sandwich enthusiasts to discover new sandwiches from around the world. This project aims to share the hidden sandwich gems from every corner of the globe, bringing together a diverse array of flavors and traditions. By creating a space that highlights these unique and delicious sandwiches, we hope to inspire and connect sandwich lovers everywhere.
 
 ### Site Goals
-- Provide a platform for users to browse, create, and share sandwich recipes.
-- Enable users to rate and leave reviews on various sandwiches.
-- Allow users to manage their personal profiles and view their posted recipes.
+
+#### User Engagement
+
+- Create an intuitive and enjoyable user experience that encourages sandwich enthusiasts to explore and interact with the site.
+
+- Implement features like comments, likes, and sharing options to boost user interaction.
+
+####  Discoverability
+
+- Provide a comprehensive and easily navigable database of sandwiches from around the world.
+
+#### Community Building
+
+- Encourage users to leave comments and reviews, creating a lively exchange of ideas and tips.
+
+#### Educational Content
+
+- Offer detailed descriptions, histories, and recipes for each sandwich to educate users about different cultures and culinary traditions.
+
+#### Visual Appeal
+
+- Ensure the site is visually appealing with high-quality images and a clean, modern design.
+
+Use design elements that reflect the diverse and vibrant nature of sandwiches from different parts of the world.
+
+#### Accessibility
+
+- Make the website accessible to all users, including those with disabilities.
+
+- Follow best practices for web accessibility to ensure everyone can enjoy the content.
+
+Mobile Optimization:
+
+- Optimize the site for mobile devices to ensure a seamless experience for users on the go.
+
+- Ensure that all features are fully functional and visually appealing on smaller screens.
 
 ### Agile Methodologies - Project Management
 The project was managed using agile methodologies, breaking down the development process into sprints. Tasks were tracked using GitHub’s project board and issues.
 
+![kanban board](static/images/kanbanboard.png)
+
 ### MoSCoW Prioritization
-- **Must-Haves**: User registration and login, sandwich recipe creation, reviews, and profiles.
-- **Should-Haves**: Sandwich recipe search functionality, improved UI/UX.
-- **Could-Haves**: User-generated images for sandwiches, social media sharing.
+- **Must-Haves**: User registration and login, posts commenting and like
+- **Should-Haves**: Sandwich recipe search functionality, post sharing, improved UI/UX.
+- **Could-Haves**: User-generated images for sandwiches, forum like discussion system.
 - **Won’t-Haves**: Full payment integration.
 
 ### Sprints
 1. **Sprint 1**: Set up Django project and environment.
 2. **Sprint 2**: User authentication and profile creation.
-3. **Sprint 3**: Sandwich recipe creation and review functionality.
+3. **Sprint 3**: Sandwich blog post creation and comment functionality.
 4. **Sprint 4**: UI/UX improvements and search functionality.
 5. **Sprint 5**: Deployment and final testing.
 
 ### User Stories
-- As a **user**, I want to register securely so I can manage my sandwich recipes.
-- As a **user**, I want to search for sandwiches by ingredients so I can find recipes I like.
-- As a **user**, I want to leave reviews and ratings for sandwiches.
-- As an **admin**, I want to manage users and sandwich submissions.
+- As a **user**, I want to view a paginated list of posts so that I can select which post I want to view.
+- As a **user**, I want to click on a post so that I can read the full text.
+- As a **user**, I want to view comments on an individual post so that I can read the conversation.
+- As a **user**, I want to register an account so that I can comment on a post.
+- As a **user**, I want to leave comments on a post so that I can be involved in the conversation.
+- As a **user**, I want to modify or delete my comment on a post so that I can be involved in the blog posts
+- As a **user**, I want to leave comments and likes for sandwiches.
+- As a **user**, I want to fill in a contact form so that I can submit a request for collaboration.
+- As an **admin**, I want to approve or disapprove comments so that I can filter out objectionable comments.
+- As an **admin**, I want to create draft posts so that I can finish writing the content later.
 
 ### Scope Plane
-The **Sandwich Lab** platform includes the following MVP functionalities:
+The **Sandwich Lab** platform is designed with essential functionalities to ensure a great user experience. The MVP includes:
 
-- User registration, login, and profile management.
-- Sandwich recipe creation, viewing, and rating.
-- CRUD operations for sandwich recipes and reviews.
+#### User Registration and Login
+
+- Users can create an account and log in to access personalized features.
+
+#### Sandwich Details Viewing and Rating
+
+- Users can browse detailed information about various sandwiches.
+
+- Rate sandwiches to share their opinions and help others discover the best ones.
+
+#### CRUD Operations for Sandwich Blog Posts
+
+- Users can create, read, update, and delete blog posts comment about their sandwich experiences and recipes.
 
 ### Wireframes
 Wireframes were created for the following pages:
-- **Home Page**: Displays featured sandwiches and an overview of the platform.
+- **Home Page**: Displays a paginated view of featured sandwiches, making it easy for users to browse through a curated selection of sandwich delights.
 - **Sandwich Detail Page**: View detailed information about each sandwich recipe.
-- **User Profile Page**: Users can view and manage their submitted sandwiches.
 - **Admin Panel**: Admins can manage users and sandwich submissions.
 
 Wireframes were designed using **Balsamiq** to ensure usability and clarity.
