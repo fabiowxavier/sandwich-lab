@@ -62,14 +62,15 @@ def post_detail(request, slug):
             # Check if the user has already liked this post
             existing_like = Like.objects.filter(post=post, user=request.user)
             if existing_like.exists():
-                existing_like.delete()  # Unlike the post
+                # Unlike the post
+                existing_like.delete()  
                 messages.info(request, "You unliked this post.")
             else:
                 # Like the post
                 Like.objects.create(post=post, user=request.user)
                 messages.success(request, "You liked this post.")
-
-    like_count = post.likes.count()  # Count the likes on the post
+    # Count the likes on the post
+    like_count = post.likes.count()  
 
     
     if request.method == "POST":

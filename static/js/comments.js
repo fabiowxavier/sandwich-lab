@@ -4,6 +4,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const commentForm = document.getElementById("commentForm");      // The form for comments
     const submitButton = document.getElementById("submitButton");    // The submit button for the form
 
+    const deleteModal = new bootstrap.Modal(document.getElementById("deleteModal"));
+    const deleteButtons = document.getElementsByClassName("btn-delete");
+    const deleteConfirm = document.getElementById("deleteConfirm");  
+
     // Add click event listener to each edit button
     for (let button of editButtons) {
         button.addEventListener("click", function(e) {
