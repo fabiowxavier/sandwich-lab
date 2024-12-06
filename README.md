@@ -1,12 +1,12 @@
-# Sandwich Lab
+![Sandwich Lab](https://path_to_your_image.jpg)
 
-Sandwich Lab is a web-based platform built using Django, providing users with a place to explore, manage, and review different sandwich recipes. Users can view a variety of sandwiches, read details, and even leave their own reviews. The project is part of the Code Institute’s Full-Stack Developer course, focusing on the Django framework, PostgreSQL database integration, and basic CRUD functionality.
+Welcome to Sandwich Lab, where we celebrate the diverse and delectable world of sandwiches. My name is Fabio, and I am a coding enthusiast with a deep love for culinary adventures. Born and raised in Porto, I grew up enjoying a sandwich that holds a special place in my heart—the Francesinha. The project is part of the Code Institute’s Full-Stack Developer course, focusing on the Django framework, PostgreSQL database integration, and basic CRUD functionality.
 
 ### Sandwich Lab Homepage
 
-- **Live site**: [Sandwich Lab](http://link-to-live-site.com)
-- **For Admin access with relevant sign-in information, [click here](#).**
-- **GitHub repository**: [Sandwich Lab GitHub](http://link-to-repository.com)
+- **Live site**: [Sandwich Lab](https://sandwich-lab-7fc0ba3ca59c.herokuapp.com/)
+- **For Admin access with relevant sign-in information,[click here](https://sandwich-lab-7fc0ba3ca59c.herokuapp.com/admin/).
+- **GitHub repository**: [Sandwich Lab GitHub](https://github.com/fabiowxavier/sandwich-lab)
 
 ---
 
