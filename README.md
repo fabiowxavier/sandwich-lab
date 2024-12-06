@@ -1,131 +1,218 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Sandwich Lab](https://path_to_your_image.jpg)
 
-Welcome Fabio Williams-xavier,
+Welcome to Sandwich Lab, where we celebrate the diverse and delectable world of sandwiches. My name is Fabio, and I am a coding enthusiast with a deep love for culinary adventures. Born and raised in Porto, I grew up enjoying a sandwich that holds a special place in my heart—the Francesinha. The project is part of the Code Institute’s Full-Stack Developer course, focusing on the Django framework, PostgreSQL database integration, and basic CRUD functionality.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+### Sandwich Lab Homepage
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
-
-### Connecting your Mongo database
-
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**June 18, 2024,** Add Mongo back into template
-
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
-
-**May 28 2024:** Fix Mongo and Links installs
-
-**April 26 2024:** Update node version to 16
-
-**September 20 2023:** Update Python version to 3.9.17.
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+- **Live site**: [Sandwich Lab](https://sandwich-lab-7fc0ba3ca59c.herokuapp.com/)
+- **For Admin access with relevant sign-in information,[click here](https://sandwich-lab-7fc0ba3ca59c.herokuapp.com/admin/).
+- **GitHub repository**: [Sandwich Lab GitHub](https://github.com/fabiowxavier/sandwich-lab)
 
 ---
 
-Happy coding!
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Overview](#overview)
+- [UX - User Experience](#ux---user-experience)
+  - [Design Inspiration](#design-inspiration)
+  - [Colour Scheme](#colour-scheme)
+  - [Font](#font)
+- [Project Planning](#project-planning)
+  - [Strategy Plane](#strategy-plane)
+  - [Site Goals](#site-goals)
+  - [Agile Methodologies](#agile-methodologies---project-management)
+  - [MoSCoW Prioritization](#moscow-prioritization)
+  - [Sprints](#sprints)
+  - [User Stories](#user-stories)
+  - [Scope Plane](#scope-plane)
+  - [Wireframes](#wireframes)
+- [Database Schema - ERD](#database-schema---entity-relationship-diagram)
+- [Security](#security)
+- [Features](#features)
+  - [User View - Registered/Unregistered](#user-view---registeredunregistered)
+  - [Role-Based Dashboard Features](#role-based-dashboard-features)
+  - [Appointment Booking System](#appointment-booking-system)
+  - [Messaging System](#messaging-system)
+- [Technologies & Languages Used](#technologies--languages-used)
+  - [Libraries & Frameworks](#libraries--frameworks)
+  - [Tools & Programs](#tools--programs)
+- [Testing](#testing)
+- [Bugs](#bugs)
+- [Deployment](#deployment)
+  - [Connecting to GitHub](#connecting-to-github)
+  - [Django Project Setup](#django-project-setup)
+  - [Heroku Deployment](#heroku-deployment)
+- [Privacy Policy](#privacy-policy)
+- [Credits](#credits)
+- [Acknowledgements](#acknowledgements)
+
+---
+
+## Overview
+
+Sandwich Lab is a platform that allows users to:
+
+- Browse a variety of sandwiches
+- Add their own sandwich recipes and ingredients
+- Leave reviews on different sandwiches
+- Manage their profiles and view previously added sandwiches
+
+This platform is designed to bring together people who love sandwiches and want to share their creations with the world.
+
+---
+
+## UX - User Experience
+
+### Design Inspiration
+The design of **Sandwich Lab** was inspired by my love of food and the joy of sharing great sandwich recipes. I wanted to create a space where people could share their sandwich ideas and recipes, interact with one another, and build a community of sandwich enthusiasts.
+
+### Colour Scheme
+- **Primary Color**: #FF6347 (Tomato Red)
+- **Secondary Color**: #FFD700 (Golden Yellow)
+- **Accent Color**: #FFFFFF (White)
+- **Background**: #F5F5F5 (Light Grey)
+
+This combination ensures a vibrant yet clean appearance, matching the food-related theme of the website.
+
+### Font
+- **Logo & Headers**: Bungee Shade
+- **Body Text & Interactive Elements**: Roboto
+
+---
+
+## Project Planning
+
+### Strategy Plane
+The primary goal of **Sandwich Lab** is to offer a user-friendly platform for sandwich enthusiasts to create, share, and discover new sandwich recipes. This project aims to streamline the process of recipe-sharing and allow users to express their love for sandwiches.
+
+### Site Goals
+- Provide a platform for users to browse, create, and share sandwich recipes.
+- Enable users to rate and leave reviews on various sandwiches.
+- Allow users to manage their personal profiles and view their posted recipes.
+
+### Agile Methodologies - Project Management
+The project was managed using agile methodologies, breaking down the development process into sprints. Tasks were tracked using GitHub’s project board and issues.
+
+### MoSCoW Prioritization
+- **Must-Haves**: User registration and login, sandwich recipe creation, reviews, and profiles.
+- **Should-Haves**: Sandwich recipe search functionality, improved UI/UX.
+- **Could-Haves**: User-generated images for sandwiches, social media sharing.
+- **Won’t-Haves**: Full payment integration.
+
+### Sprints
+1. **Sprint 1**: Set up Django project and environment.
+2. **Sprint 2**: User authentication and profile creation.
+3. **Sprint 3**: Sandwich recipe creation and review functionality.
+4. **Sprint 4**: UI/UX improvements and search functionality.
+5. **Sprint 5**: Deployment and final testing.
+
+### User Stories
+- As a **user**, I want to register securely so I can manage my sandwich recipes.
+- As a **user**, I want to search for sandwiches by ingredients so I can find recipes I like.
+- As a **user**, I want to leave reviews and ratings for sandwiches.
+- As an **admin**, I want to manage users and sandwich submissions.
+
+### Scope Plane
+The **Sandwich Lab** platform includes the following MVP functionalities:
+
+- User registration, login, and profile management.
+- Sandwich recipe creation, viewing, and rating.
+- CRUD operations for sandwich recipes and reviews.
+
+### Wireframes
+Wireframes were created for the following pages:
+- **Home Page**: Displays featured sandwiches and an overview of the platform.
+- **Sandwich Detail Page**: View detailed information about each sandwich recipe.
+- **User Profile Page**: Users can view and manage their submitted sandwiches.
+- **Admin Panel**: Admins can manage users and sandwich submissions.
+
+Wireframes were designed using **Balsamiq** to ensure usability and clarity.
+
+---
+
+## Database Schema - ERD
+
+The **Entity Relationship Diagram (ERD)** shows the relationships between **users**, **sandwiches**, and **reviews**. This is important to visualize how different data points interact within the PostgreSQL database.
+
+---
+
+## Security
+The platform uses Django’s built-in security features to handle user authentication securely, and ensure that sensitive data is protected.
+
+---
+
+## Features
+
+### User View - Registered/Unregistered
+**Unregistered users** can view sandwich recipes and browse the platform. **Registered users** have full access to create, edit, and delete their recipes and reviews.
+
+### Role-Based Dashboard Features
+- **User Dashboard**: View and manage submitted sandwich recipes, ratings, and reviews.
+- **Admin Dashboard**: Manage users and their submitted sandwiches.
+
+### Profile Management
+Users can view and edit their profiles, including their sandwich recipes and reviews.
+
+---
+
+## Technologies & Languages Used
+
+### Libraries & Frameworks
+- **Django**: Backend framework
+- **PostgreSQL**: Database management system
+- **Cloudinary**: For media storage
+- **Whitenoise**: For static file management
+
+### Tools & Programs
+- **GitHub**: Version control and project management
+- **Heroku**: Deployment and hosting
+- **Balsamiq**: Wireframes
+
+---
+
+## Testing
+
+### Validation Testing
+- **HTML**: W3C HTML Validator.
+- **CSS**: W3C CSS Validator.
+- **Python**: PEP8 validation.
+
+### User Testing
+- **Browser Compatibility**: Tested across Chrome, Firefox, Safari, and Edge.
+- **Responsiveness**: Ensured that the site works on mobile, tablet, and desktop.
+
+---
+
+## Deployment
+
+### Connecting to GitHub
+The project was connected to GitHub for version control and was deployed using Heroku. The necessary steps for deployment include configuring the `Procfile`, setting up environment variables, and using Git for version control.
+
+### Heroku Deployment
+- Deployed to Heroku by connecting the GitHub repository and configuring necessary environment variables such as `DATABASE_URL`, `CLOUDINARY_URL`, and `SECRET_KEY`.
+
+---
+
+## Privacy Policy
+As part of this project, user data such as registration details and sandwich submissions are securely stored, with role-based access ensuring the privacy of personal information. The platform does not share personal data with third parties.
+
+---
+
+## Credits
+
+### Code
+- Django Documentation
+- ChatGPT AI for code ideas and implementation suggestions
+- Favicon.io for favicon generation
+- Google Fonts for typography
+
+### Media
+- Icons and images from **Canva** and **ChatGPT**
+
+---
+
+## Acknowledgements
+Special thanks to **Amy Richardson** and **Mark Brisco** for their mentorship, guidance, and valuable feedback throughout this project. Also, thanks to **Code Institute** for providing the resources and environment to complete the project.
+
+---
