@@ -190,17 +190,41 @@ The **Sandwich Lab** platform is designed with essential functionalities to ensu
 
 ### Wireframes
 Wireframes were created for the following pages:
-- **Home Page**: Displays a paginated view of featured sandwiches, making it easy for users to browse through a curated selection of sandwich delights.
-- **Sandwich Detail Page**: View detailed information about each sandwich recipe.
-- **Admin Panel**: Admins can manage users and sandwich submissions.
+- **Home Page**: 
 
-Wireframes were designed using **Balsamiq** to ensure usability and clarity.
+![laptop index wireframe view](static/images/laptopwireframe.png) 
+Mobile Home Page
+
+  ![mobile index view](static/images/mobilewireframe.png) 
+    
+Tablet Home Page
+
+   ![tablet index view](static/images/tabletwireframe.png)
+
+Displays a paginated view of featured sandwiches, making it easy for users to browse through a curated selection of sandwich delights.
+- **Sandwich Detail Page**: View detailed information about each sandwich recipe.
+
+![sandwich post wireframe](static/images/sandwichpost.png)
+
+- **About**: Displays the reason why the web platform was created and includes a collaborative form.
+
+![about laptop wireframe view](static/images/aboutlaptopwireframe.png)
+
+Mobile About Page
+
+![about mobile wireframe view](static/images/aboutmobilewireframe.png)
+
+
+
+Wireframes were designed using **Lucidspark** *.
 
 ---
 
 ## Database Schema - ERD
 
-The **Entity Relationship Diagram (ERD)** shows the relationships between **users**, **sandwiches**, and **reviews**. This is important to visualize how different data points interact within the PostgreSQL database.
+The **Entity Relationship Diagram (ERD)** shows the relationships between **users**, **posts**, **comments**, and **likes**. This is important to visualize how different data points interact within the PostgreSQL database.
+
+![ERD Diagram](static/images/modalerddiagram.png)
 
 ---
 
