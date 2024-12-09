@@ -96,7 +96,9 @@ This combination ensures a vibrant yet clean appearance, matching the food-relat
 - **Logo**: Bungee Shade
 - **Body Text & Interactive Elements & Headers**: Helvetica Neue
 
+
 ---
+*Back to [Table of Contents](#table-of-contents)*
 
 ## Project Planning
 
@@ -219,54 +221,160 @@ Mobile About Page
 Wireframes were designed using **Lucidspark** *.
 
 ---
-
+*Back to [Table of Contents](#table-of-contents)*
 ## Database Schema - ERD
 
 The **Entity Relationship Diagram (ERD)** shows the relationships between **users**, **posts**, **comments**, and **likes**. This is important to visualize how different data points interact within the PostgreSQL database.
 
 ![ERD Diagram](static/images/modalerddiagram.png)
+Entity Relatioship Diagram were designed using **Lucidchart** *.
 
 ---
+*Back to [Table of Contents](#table-of-contents)*
 
 ## Security
-The platform uses Django’s built-in security features to handle user authentication securely, and ensure that sensitive data is protected.
+
+
+### User View - Registered/Unregistered
+
+**Sandwich Lab** offers distinct user views. Unregistered users can browse through blog posts, but only registered users have full access to the platform's interactive features.
+
+### User Registration Process
+
+- **Users**: Upon registration, users can like and comment on blog posts. They can also create, edit, and delete their own posts, enabling full CRUD (Create, Read, Update, Delete) functionality.
+- **Admins**: Admin accounts are created manually by existing admins or superusers within the Django administration area. This process ensures that the creation of administrative-level accounts is strictly controlled.
+
+### Role-Based Dashboard Features
+
+**Sandwich Lab** includes role-based access for different types of users:
+
+- **Registered Users**: Can like and comment on posts, as well as create, edit, and delete their own sandwich blog posts.
+- **Admins**: Have the broadest access, including the ability to manage user roles and oversee the entire platform's functionality.
+
+### Role-Based Navigation
+
+The navigation bar in **Sandwich Lab** adapts dynamically based on the user's status:
+
+- **Registered Users**: See options for creating, editing, and deleting posts, as well as liking and commenting on other users' posts.
+- **Unregistered Users**: Can browse blog and can see interactive options like liking or commenting.
+
+### Blog Ordering
+
+- **Alphabetical Order**: All blog posts are displayed in alphabetical order, making it easy for users to find specific sandwiches or explore the variety available.
+
+
+By structuring **Sandwich Lab** this way, we ensure a secure, engaging, and user-friendly environment for all sandwich enthusiasts.
+
+
 
 ---
+*Back to [Table of Contents](#table-of-contents)*
 
 ## Features
 
-### User View - Registered/Unregistered
-**Unregistered users** can view sandwich recipes and browse the platform. **Registered users** have full access to create, edit, and delete their recipes and reviews.
 
-### Role-Based Dashboard Features
-- **User Dashboard**: View and manage submitted sandwich recipes, ratings, and reviews.
-- **Admin Dashboard**: Manage users and their submitted sandwiches.
+**Sandwich Lab** offers a range of features designed to provide a delightful and interactive experience for sandwich enthusiasts:
 
-### Profile Management
-Users can view and edit their profiles, including their sandwich recipes and reviews.
+#### User Registration and Login
+- **Seamless Registration**: Easy sign-up process for new users to create an account.
+- **Secure Login**: Users can securely log in to access personalized features.
+
+#### Viewing and Browsing
+- **Sandwich Details Viewing**: Browse through detailed information about various sandwiches, including ingredients.
+- **Paginated Viewing**: Browse featured sandwiches through a user-friendly paginated view, ensuring easy navigation of the curated selection.
+
+#### Interaction
+- **Liking Posts**: Registered users can like posts to show their appreciation for different sandwich posts.
+- **Commenting**: Engage with the community by commenting on sandwich posts, sharing tips and feedback.
+
+#### Content Management
+
+- **Edit and Delete Comments**: Users can edit and delete their own comments, providing full control over their content.
+- **CRUD Functionality**: Full Create, Read, Update, Delete operations for comments and likes, ensuring dynamic and up-to-date content.
+
+#### Security Features
+- **CSRF Protection**: Protects form submissions from CSRF attacks.
+- **Data Encryption**: Encrypts sensitive user data, such as passwords.
+- **Role-Based Access Control (RBAC)**: Manages user roles and permissions to restrict access to sensitive areas and functionalities.
+
+#### User-Friendly Design
+- **Alphabetical Order**: Blog posts are displayed in alphabetical order, making it easy to navigate and find specific sandwiches.
+- **Responsive Design**: The platform is optimized for use on various devices, including desktops, tablets, and smartphones.
+
+#### Future Enhancements
+### Future Enhancements
+
+**Sandwich Lab** has exciting future features planned to enhance user interaction and engagement:
+
+- **User Profiles**: Planned feature to allow users to create and manage their profiles, showcasing their contributions and interactions.
+- **User-Generated Sandwich Posts**: Enable users to post their own sandwich recipes and experiences.
+- **Photo Sharing**: Allow users to upload and share pictures of themselves trying out various sandwiches on the blog.
+- **Search for Posts**: Implement a search functionality to easily find specific posts.
+- **Sort Posts by Date or Popularity**: Allow users to sort posts based on the date they were posted or their popularity.
+- **Multilingual Support**: Offer the platform in multiple languages to cater to a global audience.
+- **Forum-Like Discussion System**: Create a forum-like space for users to discuss sandwiches, share tips, and ask questions.
+
+By incorporating these features, **Sandwich Lab** aims to create an engaging and interactive platform for all sandwich enthusiasts.
+
+
 
 ---
+*Back to [Table of Contents](#table-of-contents)*
 
 ## Technologies & Languages Used
 
-### Libraries & Frameworks
-- **Django**: Backend framework
-- **PostgreSQL**: Database management system
-- **Cloudinary**: For media storage
-- **Whitenoise**: For static file management
+### Technologies Used
 
-### Tools & Programs
-- **GitHub**: Version control and project management
-- **Heroku**: Deployment and hosting
-- **Balsamiq**: Wireframes
+**Sandwich Lab** utilizes a variety of technologies to ensure a robust, efficient, and user-friendly platform. Below is a comprehensive list of the technologies and tools used:
+
+#### Python Packages and Libraries
+- **asgiref==3.8.1**: Provides ASGI (Asynchronous Server Gateway Interface) support for Django.
+- **cloudinary==1.36.0**: Integrates Cloudinary’s cloud storage and image optimization services.
+- **crispy-bootstrap5==0.7**: Enhances form rendering with Bootstrap 5 styles.
+- **dj-database-url==0.5.0**: Simplifies database configuration using URL strings.
+- **dj3-cloudinary-storage==0.0.6**: Enables Django to use Cloudinary for static and media file storage.
+- **Django==4.2.16**: The main web framework used to build and manage the application.
+- **django-allauth==0.57.2**: Provides comprehensive user authentication, registration, and account management.
+- **django-cloudinary-storage==0.3.0**: Another package for integrating Cloudinary storage with Django.
+- **django-crispy-forms==2.3**: Improves the rendering of forms with additional layout and styling capabilities.
+- **django-summernote==0.8.20.0**: Adds a WYSIWYG editor for richer text formatting in forms.
+- **gunicorn==20.1.0**: A Python WSGI HTTP Server for deploying the application.
+- **oauthlib==3.2.2**: A generic, spec-compliant, and thorough implementation of the OAuth request-signing logic.
+- **pillow==11.0.0**: A Python Imaging Library that adds image processing capabilities.
+- **psycopg2==2.9.10**: A PostgreSQL adapter for Python, allowing integration with PostgreSQL databases.
+- **PyJWT==2.10.1**: Enables JWT (JSON Web Token) handling for secure authentication.
+- **python3-openid==3.2.0**: Provides OpenID support for single sign-on authentication.
+- **requests-oauthlib==2.0.0**: Integrates OAuth for secure API access.
+- **sqlparse==0.5.2**: A non-validating SQL parser for Python.
+- **urllib3==1.26.20**: A powerful HTTP library for Python.
+- **whitenoise==5.3.0**: Serves static files efficiently in Django applications.
+
+#### Frontend Technologies
+- **HTML**: Structures the web content.
+- **CSS**: Styles the web content for a visually appealing design.
+- **Bootstrap**: Provides responsive design and pre-built components for a modern UI.
+
+#### Development and Deployment Tools
+- **Lucidchart**: Used for creating the ERD and Wireframes to plan the project.
+- **ChatGPT**: Leveraged for generating content, obtaining coding assistance, and debbuging. 
+- **Bing**: Utilized for web searches and research.
+- **GitHub**: Version control and collaboration platform for managing the codebase.
+- **GitPod**: An online IDE for coding and debugging.
+- **Heroku**: A cloud platform for deploying and hosting the application.
+
+By integrating these technologies, **Sandwich Lab** ensures a seamless and efficient experience for users and developers alike.
 
 ---
+*Back to [Table of Contents](#table-of-contents)*
 
 ## Testing
 
 ### Validation Testing
 - **HTML**: W3C HTML Validator.
+![about html validator](static/images/aboutpagevalidator.png)
+![post details html validator](static/images/post-detailsvalidator.png)
 - **CSS**: W3C CSS Validator.
+![css validator](static/images/cssvalidator.png)
 - **Python**: PEP8 validation.
 
 ### User Testing
@@ -274,6 +382,7 @@ Users can view and edit their profiles, including their sandwich recipes and rev
 - **Responsiveness**: Ensured that the site works on mobile, tablet, and desktop.
 
 ---
+*Back to [Table of Contents](#table-of-contents)*
 
 ## Deployment
 
@@ -284,11 +393,13 @@ The project was connected to GitHub for version control and was deployed using H
 - Deployed to Heroku by connecting the GitHub repository and configuring necessary environment variables such as `DATABASE_URL`, `CLOUDINARY_URL`, and `SECRET_KEY`.
 
 ---
+*Back to [Table of Contents](#table-of-contents)*
 
 ## Privacy Policy
 As part of this project, user data such as registration details and sandwich submissions are securely stored, with role-based access ensuring the privacy of personal information. The platform does not share personal data with third parties.
 
 ---
+*Back to [Table of Contents](#table-of-contents)*
 
 ## Credits
 
@@ -302,8 +413,10 @@ As part of this project, user data such as registration details and sandwich sub
 - Icons and images from **Canva** and **ChatGPT**
 
 ---
+*Back to [Table of Contents](#table-of-contents)*
 
 ## Acknowledgements
 Special thanks to **Amy Richardson** and **Mark Brisco** for their mentorship, guidance, and valuable feedback throughout this project. Also, thanks to **Code Institute** for providing the resources and environment to complete the project.
 
 ---
+*Back to [Table of Contents](#table-of-contents)*
