@@ -147,6 +147,7 @@ Mobile Optimization:
 The project was managed using agile methodologies, breaking down the development process into sprints. Tasks were tracked using GitHub’s project board and issues.
 
 ![kanban board](static/images/kanbanboard.png)
+All the **could haves** and **won't haves** features are left on the to-do list. These will potentially be tackled in another sprint.
 
 ### MoSCoW Prioritization
 - **Must-Haves**: User registration and login, posts commenting and like
@@ -301,7 +302,6 @@ By structuring **Sandwich Lab** this way, we ensure a secure, engaging, and user
 - **Alphabetical Order**: Blog posts are displayed in alphabetical order, making it easy to navigate and find specific sandwiches.
 - **Responsive Design**: The platform is optimized for use on various devices, including desktops, tablets, and smartphones.
 
-#### Future Enhancements
 ### Future Enhancements
 
 **Sandwich Lab** has exciting future features planned to enhance user interaction and engagement:
@@ -382,6 +382,104 @@ By integrating these technologies, **Sandwich Lab** ensures a seamless and effic
 - **Responsiveness**: Ensured that the site works on mobile, tablet, and desktop.
 
 ---
+
+## Bugs
+
+### Bug Fix #1: Incorrect Image Upload Path
+
+**Issue:**
+Images uploaded by users were not being saved to the correct path, causing broken image links on the site.
+
+**Cause:**
+- The file path configuration in the Django settings was incorrect.
+
+**Steps Taken to Fix:**
+1. Reviewed and corrected the `MEDIA_URL` and `MEDIA_ROOT` settings in `settings.py`.
+2. Verified that uploaded images are saved to the correct directory.
+
+**Outcome:**
+Images are now being uploaded and saved to the correct path, ensuring that they display properly on the site.
+
+### Bug Fix #2: Commenting System Malfunction
+
+**Issue:**
+Registered users were unable to post comments on blog posts due to a malfunction in the commenting system.
+
+**Cause:**
+- The issue was traced to a missing form validation step in the commenting view.
+
+**Steps Taken to Fix:**
+1. Reviewed and corrected the form validation logic in the commenting view.
+2. Tested the commenting functionality to ensure users could post comments without issues.
+
+**Outcome:**
+The commenting system now works correctly, allowing registered users to post and view comments on blog posts.
+
+### Bug Fix #3: Pagination Not Working
+
+**Issue:**
+The pagination on the blog was not functioning, causing all blog posts to be displayed on a single page.
+
+**Cause:**
+- There was a misconfiguration in the pagination settings and view logic.
+
+**Steps Taken to Fix:**
+1. Reviewed and corrected the pagination settings in the views.
+2. Ensured the pagination controls are correctly implemented in the templates.
+
+**Outcome:**
+Pagination now works as intended, displaying a manageable number of posts per page.
+
+### Bug Fix #4: User Registration Signal Not Triggering
+
+**Issue:**
+A Django signal intended to handle additional actions upon user registration was not being triggered.
+
+**Cause:**
+- The signal handler was not properly connected in the `ready()` method of the app config.
+
+**Steps Taken to Fix:**
+1. Correctly configured the signal handler in the `ready()` method of `apps.py`.
+2. Ensured that the signal is properly connected and triggered upon user registration.
+
+**Outcome:**
+The signal now triggers correctly, performing the required actions upon user registration.
+
+### Bug Fix #5: Inconsistent Post Sorting
+
+**Issue:**
+Blog posts were not being sorted consistently, leading to a confusing user experience.
+
+**Cause:**
+- The sorting logic in the views was not correctly implemented.
+
+**Steps Taken to Fix:**
+1. Reviewed and corrected the sorting logic in the blog post views.
+2. Ensured that posts are sorted in alphabetical order as intended.
+
+**Outcome:**
+Blog posts are now consistently sorted in alphabetical order, improving the user experience.
+
+### Bug Fix #6: Comment Editing Issue
+
+**Issue:**
+Users were unable to edit their comments after posting. The edited comment did not populate properly in the text box and updating it resulted in duplicated comments.
+
+**Cause:**
+- The form handling for editing comments was incorrect, causing issues with data population and duplication.
+
+**Steps Taken to Fix:**
+1. Reviewed and corrected the form handling logic for comment editing.
+2. Ensured that the existing comment data is correctly populated in the text box for editing.
+3. Fixed the duplication issue by correcting the update logic.
+
+**Outcome:**
+While the comments can now be posted, the editing functionality still requires further refinement to fully resolve the issue.
+
+
+
+
+---
 *Back to [Table of Contents](#table-of-contents)*
 
 ## Deployment
@@ -404,19 +502,40 @@ As part of this project, user data such as registration details and sandwich sub
 ## Credits
 
 ### Code
-- Django Documentation
-- ChatGPT AI for code ideas and implementation suggestions
-- Favicon.io for favicon generation
-- Google Fonts for typography
+- **Django Documentation**: For guidance on using Django's features and functionalities.
+- **ChatGPT AI**: For code ideas and implementation suggestions.
+- **Bootstrap**: For the website layout and responsive design components.
+- **Google Fonts**: For typography and font styles.
+- **Stack Overflow**: For troubleshooting and solutions to coding challenges.
+- **MDN Web Docs**: For detailed web development references and tutorials.
 
 ### Media
-- Icons and images from **Canva** and **ChatGPT**
+- **Icons**: From FontAwesome.
+- **Images**: Sourced from various Google search locations.
+- **Sandwich Content**: Taken from [Thrillist: Best Sandwiches Around the World](https://www.thrillist.com/eat/nation/best-sandwiches-types-around-the-world). *(Please note that this content is not used for commercial purposes, but solely for production and to showcase accurate content.)*
+- **Cloudinary**: For image hosting and management services.
+
+### Tools and Platforms
+- **GitHub**: For version control and collaborative development.
+- **GitPod**: For the online IDE used for coding and debugging.
+- **Heroku**: For deploying and hosting the application.
+- **Lucidchart**: For creating Wireframes and diagrams to plan the project.
+- **Bing**: For web searches and research.
+
 
 ---
 *Back to [Table of Contents](#table-of-contents)*
 
-## Acknowledgements
-Special thanks to **Amy Richardson** and **Mark Brisco** for their mentorship, guidance, and valuable feedback throughout this project. Also, thanks to **Code Institute** for providing the resources and environment to complete the project.
+## Acknowledgments
+
+I want to give a huge shout-out to my amazing wife, Adele, for all the support throughout this course and the projects that led to this one. Her encouragement and belief in me have been absolutely invaluable.
+
+A big thank you also goes to **Code Institute** for providing the resources and environment that made this project possible. Their comprehensive curriculum and supportive community have played a crucial role in my development as a developer. Special thanks to the tutor team for their invaluable help in finding solutions to a few bugs I was struggling to solve.
+
+Lastly, a big up to **Headforwards** for their support and sponsorship of the first Cornish cohort. Their backing has been instrumental in making this journey a reality.
+
+
+
 
 ---
 *Back to [Table of Contents](#table-of-contents)*
