@@ -1,6 +1,14 @@
 body {
     background-color: rgb(245, 240, 231);
 }
+.alert {
+    position: relative;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #E84610;
+    border-radius: .25rem;
+    color: #E84610;
+}
 
 .nav-link {
     color: rgb(236, 72, 31);
@@ -293,4 +301,8 @@ span.mr-3 {
 .about-img {
     max-width: 100%;  
     height: auto;
+}
+
+.about-content {
+    color: #4A4A4F;
 }
