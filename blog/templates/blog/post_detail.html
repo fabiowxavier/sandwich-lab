@@ -6,10 +6,23 @@
 <div class="masthead">
     <div class="container">
         <div class="row g-0">
+            <a href="javascript:history.back()" class="nav-link">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <!-- Image for small screens -->
+            <div class="col-12 d-block d-md-none">
+                {% if post.image %}
+                <img class="card-img-top" src="{% static 'images/sand.jpeg' %}" alt="placeholder image">
+                {% else %}
+                <img class="card-img-top" src="{{ post.featured_image.url }}" alt="{{ post.title }}">
+                {% endif %}
+            </div>
+            <!-- Title and subtitle -->
             <div class="col-md-6 masthead-text">
                 <h1 class="post-title">{{ post.title }}</h1>
                 <p class="post-subtitle">{{ post.location }} </p>
             </div>
+            <!-- Image for medium and larger screens -->
             <div class="d-none d-md-block col-md-6 masthead-image">
                 {% if post.image %}
                 <img class="card-img-top" src="{% static 'images/sand.jpeg' %}" alt="placeholder image">
@@ -29,12 +42,17 @@
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Displaying count of comments -->
-    <div class="row">
+<!-- Displaying count of comments -->
+<div class="container">
+    <div class="row mt-4">
         <div class="col-12">
-            <strong class="text-secondary">
+            <strong class="text-secondary" style="padding-right: 14px;">
                 <i class="far fa-comments"></i> {{ comment_count }}
+            </strong>
+            <strong class="text-secondary">
+                <i class="far fa-thumbs-up"></i> {{ like_count }} 
             </strong>
         </div>
         <div class="col-12">
@@ -43,16 +61,11 @@
     </div>
 
     <!-- Displaying Likes -->
-    <div class="row">
-        <div class="col-12">
-            <strong class="text-secondary">
-                <i class="far fa-thumbs-up"></i> {{ like_count }} Likes
-            </strong>
-        </div>
+    <div class="row mb-4">
         <div class="col-12">
             <form method="post">
                 {% csrf_token %}
-                <button type="submit" name="like" class="btn-like btn">
+                <button type="submit" name="like" class="btn-like btn btn-md mt-2">
                     {% if user.is_authenticated %}
                     {% if request.user in post.likes.all %}
                     Unlike
@@ -87,9 +100,11 @@
                     <p class="approval">This comment is awaiting approval</p>
                     {% endif %}
                     {% if user.is_authenticated and comment.author == user %}
-                    <button class="btn btn-edit" type="button" data-comment-id="{{ comment.id }}" data-slug="{{ post.slug }}">
+                    <button class="btn btn-edit" type="button" data-comment-id="{{ comment.id }}"
+                        data-slug="{{ post.slug }}">
                         Edit</button>
-                    <button class="btn btn-delete btn-like" type="button" data-alt="Delete button" onclick="window.location.href='{% url 'comment_delete' slug=post.slug comment_id=comment.id %}'">Delete</button>
+                    <button class="btn btn-delete btn-like" type="button" data-alt="Delete button"
+                        onclick="window.location.href='{% url 'comment_delete' slug=post.slug comment_id=comment.id %}'">Delete</button>
                     {% endif %}
                 </div>
                 {% endfor %}
@@ -104,7 +119,8 @@
                 <p>Posting as: {{ user.username }}</p>
                 <form id="commentForm" method="post">
                     {% csrf_token %}
-                    <textarea id="id_body" name="body" class="form-control" rows="3" placeholder="Edit your comment..."></textarea>
+                    <textarea id="id_body" name="body" class="form-control" rows="3"
+                        placeholder="Leave a comment..."></textarea>
                     <button type="submit" class=" mt-3 btn btn-signup btn-md" id="submitButton">Submit</button>
                 </form>
                 {% else %}
