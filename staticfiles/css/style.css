@@ -4,10 +4,12 @@ body {
 .alert {
     position: relative;
     padding: 1rem 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem auto;       
     border: 1px solid #E84610;
     border-radius: .25rem;
     color: #E84610;
+    width: 300px;
+    text-align: center;  
 }
 
 .nav-link {
