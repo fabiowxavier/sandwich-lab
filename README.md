@@ -22,6 +22,12 @@ So come along and join me as I blend my love for sandwiches and coding, one tast
 - **Live site**: [Sandwich Lab](https://sandwich-lab-7fc0ba3ca59c.herokuapp.com/)
 - **GitHub repository**: [Sandwich Lab GitHub](https://github.com/fabiowxavier/sandwich-lab)
 
+- Test User Log In.
+
+Username : breadmonster
+
+Password : sandwich123
+
 ---
 
 ## Table of Contents

@@ -233,6 +233,9 @@ color: #E84610;
     color: #6c757d;
 }
 
+.text-secondary {
+    padding-right: 14px;
+}
 /* ----------------------------------------- Buttons styling */
 .btn-signup,
 .btn-edit {
