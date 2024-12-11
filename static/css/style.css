@@ -312,3 +312,13 @@ span.mr-3 {
 .about-content {
     color: #4A4A4F;
 }
+
+.custom-shadow { 
+    display: flex; 
+    flex-direction: column; 
+    height: 100%; 
+} 
+
+.custom-shadow .card-body 
+{ flex-grow: 1;
+}
